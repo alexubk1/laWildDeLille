@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>La wild de Lille</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src='js/elevator.js'></script>
+    <script type="text/javascript" src="js/responsify.js"></script>
+    <script type="text/javascript" src="js/responsify.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  </head>
+  <body>
+    <!-- Navbar, powered by Bulma -->
+    <nav class="navbar is-transparent is-fixed-top">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../index.html">
+          <img src="images/wild_logo2.png" alt="Bulma: a modern CSS framework based on Flexbox">
+        </a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="../index.html">
+            Home
+          </a>
+          <a class="navbar-item" href="">
+            L'ecole
+          </a>
+          <a class="navbar-item" href="">
+            Les Atouts
+          </a>
+          <a class="navbar-item" href="">
+            Contacts
+          </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- fullpage setup  -->
+    <div id="fullpage">
+      <!-- People Section -->
+      <div class="section">
+        <div class="slide wrapper">
+          <img src="images/bg5.jpg" alt="" data-focus-left="0.34" data-focus-top="0.22" data-focus-right="0.85" data-focus-bottom="0.88"/>
+        </div>
+        <div class="slide wrapper">
+          <img src="images/bg5.jpg" alt="" data-focus-left="0.34" data-focus-top="0.22" data-focus-right="0.85" data-focus-bottom="0.88"/>
+        </div>
+        <div class="slide wrapper">
+          <img src="images/bg5.jpg" alt="" data-focus-left="0.34" data-focus-top="0.22" data-focus-right="0.85" data-focus-bottom="0.88"/>
+        </div>
+      </div>
+      <!-- Student section -->
+      <div class="section">
+        <div class="slide wrapper">
+          <img src="http://beveragestown.com/wp-content/uploads/2016/08/Where-to-buy-coffee-machines.jpg" alt="" data-focus-left="0.34" data-focus-top="0.22" data-focus-right="0.85" data-focus-bottom="0.88"/>
+        </div>
+        <div class="slide wrapper">
+          <img src="http://beveragestown.com/wp-content/uploads/2016/08/Where-to-buy-coffee-machines.jpg" alt="" data-focus-left="0.34" data-focus-top="0.22" data-focus-right="0.85" data-focus-bottom="0.88"/>
+        </div>
+        <div class="slide wrapper">
+          <img src="http://beveragestown.com/wp-content/uploads/2016/08/Where-to-buy-coffee-machines.jpg" alt="" data-focus-left="0.34" data-focus-top="0.22" data-focus-right="0.85" data-focus-bottom="0.88"/>
+        </div>
+      </div>
+      <!-- "Atouts" section -->
+      <div class="section">
+        <div class="wrapper">
+          <img src="https://www.opteamix.com/wp-content/uploads/2017/09/slider-image-0003.jpg" alt="" data-focus-left="0.34" data-focus-top="0.22" data-focus-right="0.85" data-focus-bottom="0.88"/>
+        </div>
+      </div>
+      <!-- slippers section -->
+      <div id="last_section" class="section">
+        <div class="wrapper">
+          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/d4/64/24d4644a95cd3cb8e6d9ee9fb584cc1c.jpg" alt="" data-focus-left="0.34" data-focus-top="0.22" data-focus-right="0.85" data-focus-bottom="0.88"/>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- SCRIPT JAVASCRIPT -->
+
+    <!-- Elevator script -->
+    <script>
+      window.onload = function() {
+        var elevator = new Elevator({
+          element: document.querySelector('.elevator-button'),
+          mainAudio: 'audio/Elevator-music.mp3',
+          endAudio: 'audio/Elevator-bell.mp3'
+        });
+      }
+      elevator.elevate();
+    </script>
+    <!-- responsify script, enhances image responsivity -->
+    <script type="text/javascript">
+      $(window).load(function(){
+        $('img').responsify({});
+      });
+      $(window).resize(function(){
+        $('img').responsify({});
+      });
+    </script>
+    <!-- Script fullpage.js -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#fullpage').fullpage({
+          //Navigation
+          // menu: '#menu',
+          lockAnchors: false,
+          // anchors:['firstPage', 'secondPage'],
+          // navigation: true,
+          // navigationPosition: 'right',
+          // navigationTooltips: ['firstSlide', 'secondSlide'],
+          // showActiveTooltip: false,
+          slidesNavigation: true,
+          slidesNavPosition: 'bottom',
+
+          // //Scrolling
+          // css3: true,
+          // scrollingSpeed: 700,
+          // autoScrolling: true,
+          // fitToSection: true,
+          // fitToSectionDelay: 1000,
+          // scrollBar: false,
+          // easing: 'easeInOutCubic',
+          // easingcss3: 'ease',
+          // loopBottom: false,
+          // loopTop: false,
+          // loopHorizontal: true,
+          // continuousVertical: false,
+          // continuousHorizontal: false,
+          // scrollHorizontally: false,
+          // interlockedSlides: false,
+          // dragAndMove: false,
+          // offsetSections: false,
+          // resetSliders: false,
+          // fadingEffect: false,
+          // normalScrollElements: '#last_section',
+          // scrollOverflow: false,
+          // scrollOverflowReset: false,
+          // scrollOverflowOptions: null,
+          // touchSensitivity: 15,
+          // normalScrollElementTouchThreshold: 5,
+          // bigSectionsDestination: null,
+
+          // //Accessibility
+          // keyboardScrolling: true,
+          // animateAnchor: true,
+          // recordHistory: true,
+
+          // //Design
+          // controlArrows: true,
+          // verticalCentered: true,
+          // sectionsColor : ['#ccc', '#fff'],
+          // paddingTop: '3em',
+          // paddingBottom: '10px',
+          // fixedElements: '#header, .footer',
+          // responsiveWidth: 0,
+          // responsiveHeight: 0,
+          // responsiveSlides: false,
+          // parallax: false,
+          // parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+          // //Custom selectors
+          // sectionSelector: '.section',
+          // slideSelector: '.slide',
+
+          // lazyLoading: true,
+
+          // //events
+          // onLeave: function(index, nextIndex, direction){},
+          // afterLoad: function(anchorLink, index){},
+          // afterRender: function(){},
+          // afterResize: function(){},
+          // afterResponsive: function(isResponsive){},
+          // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+          // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+        });
+      });
+    </script>
+
+  </body>
+</html>

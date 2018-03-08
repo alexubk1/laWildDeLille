@@ -1,0 +1,142 @@
+/* Style Page 1 */
+body {
+  overflow: hidden;
+}
+
+#fullpage {
+  height: 100vh;
+}
+
+/* #fullpage .section {
+  height: 100vh;
+  padding: 0;
+} */
+
+.navbar {
+  background-color: transparent;
+}
+
+.fp-slidesNav ul {
+  text-align: center;
+  color: yellow;
+}
+
+
+#fullpage .section {
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper img {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+}
+
+/* Backgrounds will cover all the section */
+
+.section-0-img {
+  background-image: url(images/bg1.jpg);
+  background-size: cover;
+}
+
+.section-1-img {
+  background-image: url(images/bg2.jpg);
+  background-size: cover;
+}
+
+.section-2-img {
+  background-image: url(images/bg3.jpg);
+  background-size: cover;
+}
+
+.section-3-img {
+  background-image: url(images/bg4.jpg);
+  background-size: cover;
+}
+
+#section0 {
+  display: table;
+  width: 100%;
+  height: 100vh;
+	/* background: linear-gradient(rgba(255, 230, 6, 0.5),rgba(198, 180, 18, 0.5)); */
+}
+
+#section1 {
+  display: table;
+  width: 100%;
+  height: 100vh;
+	/* background: linear-gradient(rgba(228, 219, 9, 0.5),rgba(204, 228, 9, 0.5)); */
+}
+
+#section2 {
+  display: table;
+  width: 100%;
+  height: 100vh;
+	/* background: linear-gradient(rgba(204, 228, 9, 0.5),rgba(165, 228, 9, 0.5)); */
+}
+
+#section3 {
+  display: table;
+  width: 100%;
+  height: 100vh;
+	/* background: linear-gradient(rgba(165, 228, 9, 0.5), rgba(46, 228, 9, 0.5)); */
+}
+
+/* Fixed header */
+/*
+#header {
+  position: fixed;
+  height: 50px;
+  display: block;
+  width: 100%;
+  background: rgb(230, 230, 230);
+  z-index: 9;
+  text-align: center;
+  padding: 20px 0 0 0;
+} */
+
+
+
+h2 {
+  color: white;
+  vertical-align: middle;
+}
+
+.text-div {
+  text-align: center;
+  word-wrap: normal;
+  font-size: 10vh;
+  vertical-align: middle;
+}
+
+.child-1 {
+  font-size: 15vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.child-2 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* #fullpage .section:nth-child(1){
+}
+#fullpage .section:nth-child(2){
+  background-color: rgb(242, 255, 0);
+}
+#fullpage .section:nth-child(3){
+  background-color: rgb(74, 255, 0);
+}
+#fullpage .section:nth-child(4){
+  background-color: rgb(19, 29, 154);
+}
+#fullpage .section:nth-child(5){
+  background-color: rgb(242, 0, 255);
+} */

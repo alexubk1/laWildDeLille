@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>La wild de Lille</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src='js/elevator.js'></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/responsify.js"></script>
+    <script type="text/javascript" src="js/responsify.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar is-transparent is-fixed-top">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="">
+          <img src="images/wild_logo2.png" alt="Bulma: a modern CSS framework based on Flexbox">
+        </a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">
+            Home
+          </a>
+          <a class="navbar-item" href="page_description/index.html">
+            L'ecole
+          </a>
+          <a class="navbar-item" href="">
+            Les Atouts
+          </a>
+          <a class="navbar-item" href="">
+            Contacts
+          </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- fullpage setup  -->
+    <div id="fullpage">
+      <div class="section section-0-img" >
+        <img src="images/bg1.jpg" alt="" data-focus-left="0.34" data-focus-top="0.15" data-focus-right="0.87" data-focus-bottom="0.79"/>
+        <div class="text-div" id="section0">
+          <p class="child-1">BIENVENUE</p>
+        </div>
+      </div>
+      <div class="section section-1-img" >
+        <img src="images/bg2.jpg" alt="" data-focus-left="0.23" data-focus-top="0.23" data-focus-right="0.72" data-focus-bottom="0.78"/>
+        <div class="text-div" id="section1">
+          <h2 class="child-2">Inside the Wild</h2>
+        </div>
+      </div>
+      <div class="section section-2-img" >
+        <img src="images/bg3.jpg" alt="" data-focus-left="0.37" data-focus-top="0.18" data-focus-right="0.85" data-focus-bottom="0.79"/>
+        <div class="text-div" id="section2">
+          <h2 class="child-2">Les joies de la Wild</h2>
+        </div>
+      </div>
+      <div class="section section-3-img" >
+        <img src="images/bg6.jpg" alt="" data-focus-left="0.40" data-focus-top="0.10" data-focus-right="0.82" data-focus-bottom="0.80"/>
+        <div class="text-div" id="section3">
+          <h2 class="child-2">Contactez-Nous!</h2>
+        </div>
+      </div>
+
+    </div>
+    <!-- Elevator script -->
+    <script>
+      window.onload = function() {
+        var elevator = new Elevator({
+          element: document.querySelector('.elevator-button'),
+          mainAudio: 'audio/Elevator-music.mp3',
+          endAudio: 'audio/Elevator-bell.mp3'
+        });
+      }
+      elevator.elevate();
+    </script>
+    <!-- responsify script, enhances image responsivity -->
+    <script type="text/javascript">
+      $(window).load(function(){
+        $('img').responsify({});
+      });
+      $(window).resize(function(){
+        $('img').responsify({});
+      });
+    </script>
+    <!-- Script fullpage.js -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#fullpage').fullpage({
+          //Navigation
+          // menu: '#menu',
+          // lockAnchors: false,
+          // anchors:['firstPage', 'secondPage'],
+          navigation: true,
+          navigationPosition: 'right',
+          // navigationTooltips: ['firstSlide', 'secondSlide'],
+          // showActiveTooltip: false,
+          // slidesNavigation: false,
+          // slidesNavPosition: 'bottom',
+
+          // //Scrolling
+          // css3: true,
+          // scrollingSpeed: 700,
+          // autoScrolling: true,
+          // fitToSection: true,
+          // fitToSectionDelay: 1000,
+          // scrollBar: false,
+          // easing: 'easeInOutCubic',
+          // easingcss3: 'ease',
+          // loopBottom: false,
+          // loopTop: false,
+          // loopHorizontal: true,
+          // continuousVertical: false,
+          // continuousHorizontal: false,
+          // scrollHorizontally: false,
+          // interlockedSlides: false,
+          // dragAndMove: false,
+          // offsetSections: false,
+          // resetSliders: false,
+          // fadingEffect: false,
+          // normalScrollElements: '#element1, .element2',
+          // scrollOverflow: false,
+          // scrollOverflowReset: false,
+          // scrollOverflowOptions: null,
+          // touchSensitivity: 15,
+          // normalScrollElementTouchThreshold: 5,
+          // bigSectionsDestination: null,
+
+          // //Accessibility
+          // keyboardScrolling: true,
+          // animateAnchor: true,
+          // recordHistory: true,
+
+          // //Design
+          // controlArrows: true,
+          // verticalCentered: true,
+          // sectionsColor : ['#ccc', '#fff'],
+          // paddingTop: '3em',
+          // paddingBottom: '10px',
+          // fixedElements: '#header, .footer',
+          // responsiveWidth: 0,
+          // responsiveHeight: 0,
+          // responsiveSlides: false,
+          // parallax: false,
+          // parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+          // //Custom selectors
+          // sectionSelector: '.section',
+          // slideSelector: '.slide',
+
+          // lazyLoading: true,
+
+          // //events
+          // onLeave: function(index, nextIndex, direction){},
+          // afterLoad: function(anchorLink, index){},
+          // afterRender: function(){},
+          // afterResize: function(){},
+          // afterResponsive: function(isResponsive){},
+          // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+          // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+        });
+      });
+    </script>
+
+  </body>
+</html>
+
+
+<!-- responsify image links -->
+<!--
+<img src="bg1.jpg" alt="" data-focus-left="0.34" data-focus-top="0.15" data-focus-right="0.87" data-focus-bottom="0.79"/>
+<img src="bg2.jpg" alt="" data-focus-left="0.23" data-focus-top="0.23" data-focus-right="0.72" data-focus-bottom="0.78"/>
+<img src="bg3.jpg" alt="" data-focus-left="0.37" data-focus-top="0.18" data-focus-right="0.85" data-focus-bottom="0.79"/>
+<img src="bg6.jpg" alt="" data-focus-left="0.40" data-focus-top="0.10" data-focus-right="0.82" data-focus-bottom="0.80"/>
+ -->
