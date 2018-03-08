@@ -1,0 +1,14 @@
+/* MEDIA QUERIES */
+/*Pour écrans d'une résolution inférieure ou égale au Nexus 7 (960px)*/
+
+@media (max-width: 960px)
+{
+  .divtext{
+    height: auto;
+  }
+  .gifdescription{
+    margin-top:auto;
+    margin-bottom:1vw;
+    font-size:3vw
+  }
+}
