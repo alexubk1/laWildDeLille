@@ -14,8 +14,17 @@ body {
 
 /* Backgrounds will cover all the section */
 
+.fp-tableCell {
+  padding: 0;
+}
+
+
+.navbar-item {
+  color: black;
+}
+
 .navbar {
-  background-color: transparent;
+  background: linear-gradient(rgba(255, 255, 255, 1) ,rgba(255, 255, 255, 0));
 }
 
 .fp-slidesNav ul {
