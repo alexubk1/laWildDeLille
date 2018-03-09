@@ -2,7 +2,8 @@
 
 /* GENERAL */
 body{
-  background-image: url("../images/black_background.jpg");
+  background: linear-gradient(black,darkred)
+  /* background-image: url("../images/black_background.jpg"); */
 }
 
 @font-face {
@@ -20,6 +21,34 @@ h1{
 
 #titre{
   height:50vh;
+}
+
+/* HIDING FOR PREZ */
+.gifdescription{
+  background-color: yellow;
+  font-family: Beauty;
+  font-size: 3vw;
+  margin-top:5vw;
+  margin-bottom:5vw;
+  color: yellow;
+}
+
+/* NAVBAR */
+.navbar-item{
+  font-family: Beauty;
+  color: orange;
+  font-size: 1.8vw;
+  margin-right: 4vw;
+}
+
+.navbar{
+  /* background-color: linear-gradient (rgba(255, 255, 255, 1) ,rgba(255, 255, 255, 0)); */
+  background-color: transparent;
+  height: 7vw;
+}
+
+.navbar-brand{
+  height: 7vw
 }
 
 /* DEFINITION DES DIMENSIONS DES ROWS ET DE L'ESPACEMENT AVANT/APRES*/
@@ -43,12 +72,13 @@ h1{
 }
 
 /* DIMENSION ET POSITION DU PARAGRAPHE DE TEXTE DE DESCRIPTION DU GIF */
-.gifdescription{
+/* .gifdescription{
+  font-family: Beauty;
   font-size: 3vw;
   margin-top:5vw;
   margin-bottom:5vw;
   color: white;
-}
+} */
 
 
 /* TAILLE ET POSITION DU GIF DANS SA DIV */
@@ -83,9 +113,14 @@ path{
   fill: white
 }
 
+ .elevator{
+   background-color: darkred;
+  /* background-image: url("../images/black_background.jpg"); */
+}
+
   /*changement du curseur sur l'ascenseur */
 .sweet-svg:hover {
   cursor:pointer;
-  -webkit-box-shadow: 0px 0px 20px red;
-  -moz-box-shadow: 0px 0px 20px red;
+  -webkit-box-shadow: 0px 0px 20px yellow;
+  -moz-box-shadow: 0px 0px 20px yellow;
 }
