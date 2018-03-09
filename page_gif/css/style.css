@@ -1,0 +1,126 @@
+/******* CSS PAGE 3 ********/
+
+/* GENERAL */
+body{
+  background: linear-gradient(black,darkred)
+  /* background-image: url("../images/black_background.jpg"); */
+}
+
+@font-face {
+    font-family: Beauty;
+    src: url("../fonts/Beauty.ttf");
+}
+
+h1{
+  text-align: center;
+  font-family: Beauty;
+  margin-top: 20vw;
+  font-size: 8vw;
+  color: white;
+}
+
+#titre{
+  height:50vh;
+}
+
+/* HIDING FOR PREZ */
+.gifdescription{
+  background-color: yellow;
+  font-family: Beauty;
+  font-size: 3vw;
+  margin-top:5vw;
+  margin-bottom:5vw;
+  color: yellow;
+}
+
+/* NAVBAR */
+.navbar-item{
+  font-family: Beauty;
+  color: orange;
+  font-size: 1.8vw;
+  margin-right: 4vw;
+}
+
+.navbar{
+  /* background-color: linear-gradient (rgba(255, 255, 255, 1) ,rgba(255, 255, 255, 0)); */
+  background-color: transparent;
+  height: 7vw;
+}
+
+.navbar-brand{
+  height: 7vw
+}
+
+/* DEFINITION DES DIMENSIONS DES ROWS ET DE L'ESPACEMENT AVANT/APRES*/
+.row{
+  height: 30vw;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  font-family: Beauty;
+}
+
+/* TAILLE DES 2 DIVS CONTENUES DANS CHAQUE ROW */
+/*DIV DE L'IMAGE*/
+.divgif{
+  height: 30vw;
+  text-align: center;
+}
+/*DIV DU TEXTE*/
+.divtext{
+  height: 30vw;
+  text-align: center;
+}
+
+/* DIMENSION ET POSITION DU PARAGRAPHE DE TEXTE DE DESCRIPTION DU GIF */
+/* .gifdescription{
+  font-family: Beauty;
+  font-size: 3vw;
+  margin-top:5vw;
+  margin-bottom:5vw;
+  color: white;
+} */
+
+
+/* TAILLE ET POSITION DU GIF DANS SA DIV */
+.gif{
+  height:25vw;
+  max-width:40vw;
+  border-radius: 5vw;
+  border-style:double;
+  border-color:black;
+  border-width:0.7vw;
+  border-radius:5vw;
+  -webkit-box-shadow: 0px 0px 20px yellow;
+  -moz-box-shadow: 0px 0px 20px yellow;
+}
+
+/*ASCENSEUR TROP BIEN */
+.sweet-svg{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 1vw;
+}
+
+#backtotop{
+  text-align: center;
+  font-size:2vw;
+  font-family: Beauty;
+  color: yellow;
+}
+
+path{
+  fill: white
+}
+
+ .elevator{
+   background-color: darkred;
+  /* background-image: url("../images/black_background.jpg"); */
+}
+
+  /*changement du curseur sur l'ascenseur */
+.sweet-svg:hover {
+  cursor:pointer;
+  -webkit-box-shadow: 0px 0px 20px yellow;
+  -moz-box-shadow: 0px 0px 20px yellow;
+}
