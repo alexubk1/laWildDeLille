@@ -42,15 +42,14 @@ h1{
   margin-right: 4vw;
 }
 
-.navbar{
-  /* background-color: linear-gradient (rgba(255, 255, 255, 1) ,rgba(255, 255, 255, 0)); */
+/* .navbar{
   background-color: transparent;
   height: 7vw;
-}
-
+} */
+/* 
 .navbar-brand{
   height: 7vw
-}
+} */
 
 /* DEFINITION DES DIMENSIONS DES ROWS ET DE L'ESPACEMENT AVANT/APRES*/
 .row{
