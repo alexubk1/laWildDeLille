@@ -97,3 +97,10 @@ textarea.form-control {
 .textarea_lor{
 	max-width: 100%;
 }
+
+.margB {
+  margin-bottom: 35px;
+}
+.margT {
+  margin-top: 35px;
+}

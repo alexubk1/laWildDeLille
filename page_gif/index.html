@@ -11,13 +11,17 @@
 
     <title>Les joies de la Wild</title>
     <!-- Latest compiled and minified Bulma CSS files -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
     <!-- Latest compiled and minified Bootstrap CSS files -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Latest compiled and minified AOS CSS files -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
     <!-- Personal CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- fullPage CSS -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <!-- fullPage + Navbar CSS -->
+    <link rel="stylesheet" type="text/css" href="css/navbar_and_full.css">
+
     <!-- CSS for media queries (low resolution) -->
     <link rel="stylesheet" media="(max-width: 960px)" href="./css/petite_resolution.css" />
 
@@ -26,38 +30,32 @@
   <body>
 
 <!-- Header : navbar -->
-  <header>
-    <nav class="navbar is-transparent is-fixed-top">
-      <div class="navbar-brand">
-        <a class="logowild navbar-item" href="">
-          <img src="images/wild_logo.png" alt="Logo de la Wild version rouge" height=50px>
-        </a>
-        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-          <span></span>
-          <span></span>
-          <span></span>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <!-- <img src="images/wild_logo2.png" alt="logo de la Wild"> -->
+          </a>
         </div>
-      </div>
 
-      <div id="navbarExampleTransparentExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="../index.html">
-            Welcome
-          </a>
-          <a class="navbar-item" href="../page_description/index.html">
-            Inside the Wild
-          </a>
-          <a class="navbar-item" href="../page_gif/index.html">
-            Les joies de la Wild
-          </a>
-          <a class="navbar-item" href="../page_form/index.php">
-            Contact
-          </a>
-          </div>
-        </div>
-      </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Menu</a></li>
+            <li><a href="../page_description/index.html">Description</a></li>
+            <li><a href="index.html">Les joies</a></li>
+            <li><a href="../page_form/index.html">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
-  </header>
 
 <!-- Section 1: Défilement des gifs de la page 'Les joies de la Wild' -->
     <!-- <section>
@@ -172,135 +170,139 @@
       </div>
     </section> -->
 
-    <!-- Section 1: Défilement des gifs de la page 'Les joies de la Wild' -->
-        <section>
-          <div class="container">
-            <div id="titre">
-              <h1>Les joies de la Wild</h1>
+<!-- Section 1: Défilement des gifs de la page 'Les joies de la Wild' -->
+    <div id="fullpage">
+      <div class="section section-0-img" >
+        <img src="images/bg6.jpg" alt="" data-focus-left="0.34" data-focus-top="0.15" data-focus-right="0.87" data-focus-bottom="0.79"/>
+        <div id="titre">
+          <h1>Les joies de la Wild</h1>
+        </div>
+      </div>
+      <section class="section" id="normalScroll">
+        <div class="container">
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
             </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
-                <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
-              </div>
-              <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
-                <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
-              </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
             </div>
           </div>
-        </section>
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
+            </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
+            </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
+            </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
+            </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
+            </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
+            </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
+            </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
+            </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
+            </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
+            </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
+            </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="divtext col-md-6 col-xs-12" data-aos="slide-right">
+              <p class="gifdescription">Quand la deadline du rendu de ton projet de groupe est avancée d'une journée</p>
+            </div>
+            <div class="divgif col-md-6 col-xs-12 texte" data-aos="slide-left">
+              <img class="gif" src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" />
+            </div>
+          </div>
+        </div>
+      </section>
+  <!-- Section 2: Ascenseur émotionnel de la mort qui déchire -->
+      <section id="normalScroll">
+        <div class="elevator">
+                    <div class="do-the-thing">
+                        <div class="elevator col-md-12 col-xs-12">
+                            <svg class="sweet-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px" width="100px">
+                                <path d="M70,47.5H30c-1.4,0-2.5,1.1-2.5,2.5v40c0,1.4,1.1,2.5,2.5,2.5h40c1.4,0,2.5-1.1,2.5-2.5V50C72.5,48.6,71.4,47.5,70,47.5z   M47.5,87.5h-5v-25h5V87.5z M57.5,87.5h-5v-25h5V87.5z M67.5,87.5h-5V60c0-1.4-1.1-2.5-2.5-2.5H40c-1.4,0-2.5,1.1-2.5,2.5v27.5h-5  v-35h35V87.5z"/>
+                                <path d="M50,42.5c1.4,0,2.5-1.1,2.5-2.5V16l5.7,5.7c0.5,0.5,1.1,0.7,1.8,0.7s1.3-0.2,1.8-0.7c1-1,1-2.6,0-3.5l-10-10  c-1-1-2.6-1-3.5,0l-10,10c-1,1-1,2.6,0,3.5c1,1,2.6,1,3.5,0l5.7-5.7v24C47.5,41.4,48.6,42.5,50,42.5z"/>
+                            </svg>
+                            <p id="backtotop"> Revenir en haut </p>
+                        </div>
+                    </div>
+                </div>
+      </section>
+    </div>
 
-        
 
-<!-- Section 2: Ascenseur émotionnel de la mort qui déchire -->
-    <section>
-      <div class="elevator">
-                  <div class="do-the-thing">
-                      <div class="elevator col-md-12 col-xs-12">
-                          <svg class="sweet-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px" width="100px">
-                              <path d="M70,47.5H30c-1.4,0-2.5,1.1-2.5,2.5v40c0,1.4,1.1,2.5,2.5,2.5h40c1.4,0,2.5-1.1,2.5-2.5V50C72.5,48.6,71.4,47.5,70,47.5z   M47.5,87.5h-5v-25h5V87.5z M57.5,87.5h-5v-25h5V87.5z M67.5,87.5h-5V60c0-1.4-1.1-2.5-2.5-2.5H40c-1.4,0-2.5,1.1-2.5,2.5v27.5h-5  v-35h35V87.5z"/>
-                              <path d="M50,42.5c1.4,0,2.5-1.1,2.5-2.5V16l5.7,5.7c0.5,0.5,1.1,0.7,1.8,0.7s1.3-0.2,1.8-0.7c1-1,1-2.6,0-3.5l-10-10  c-1-1-2.6-1-3.5,0l-10,10c-1,1-1,2.6,0,3.5c1,1,2.6,1,3.5,0l5.7-5.7v24C47.5,41.4,48.6,42.5,50,42.5z"/>
-                          </svg>
-                          <p id="backtotop"> Revenir en haut </p>
-                      </div>
-                  </div>
-              </div>
-    </section>
 
 <!-- Les scripts JS utilisés -->
   <!--JQUERY pour que Bootstrap soit content -->
@@ -332,6 +334,88 @@
                 endAudio:  'js/elevator/music/ding.mp3'
             });
   </script>
+  <!-- fullpage .js -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#fullpage').fullpage({
+        //Navigation
+        // menu: '#menu',
+        // lockAnchors: false,
+        // anchors:['firstPage', 'secondPage'],
+        // navigation: true,
+        // navigationPosition: 'right',
+        // navigationTooltips: ['firstSlide', 'secondSlide'],
+        // showActiveTooltip: false,
+        // slidesNavigation: false,
+        // slidesNavPosition: 'bottom',
+
+        // //Scrolling
+        // css3: true,
+        // scrollingSpeed: 700,
+        // autoScrolling: true,
+        // fitToSection: true,
+        // fitToSectionDelay: 1000,
+        scrollBar: true,
+        // easing: 'easeInOutCubic',
+        // easingcss3: 'ease',
+        // loopBottom: false,
+        // loopTop: false,
+        // loopHorizontal: true,
+        // continuousVertical: false,
+        // continuousHorizontal: false,
+        // scrollHorizontally: false,
+        // interlockedSlides: false,
+        // dragAndMove: false,
+        // offsetSections: false,
+        // resetSliders: false,
+        fadingEffect: true,
+        normalScrollElements: '#normalScroll',
+        // scrollOverflow: false,
+        // scrollOverflowReset: false,
+        // scrollOverflowOptions: null,
+        // touchSensitivity: 15,
+        // normalScrollElementTouchThreshold: 5,
+        // bigSectionsDestination: null,
+
+        // //Accessibility
+        // keyboardScrolling: true,
+        // animateAnchor: true,
+        // recordHistory: true,
+
+        // //Design
+        // controlArrows: true,
+        // verticalCentered: true,
+        // sectionsColor : ['#ccc', '#fff'],
+        // paddingTop: '3em',
+        // paddingBottom: '10px',
+        // fixedElements: '#header, .footer',
+        // responsiveWidth: 0,
+        // responsiveHeight: 0,
+        // responsiveSlides: false,
+        // parallax: false,
+        // parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+        // //Custom selectors
+        // sectionSelector: '.section',
+        // slideSelector: '.slide',
+
+        // lazyLoading: true,
+
+        // //events
+        // onLeave: function(index, nextIndex, direction){},
+        // afterLoad: function(anchorLink, index){},
+        // afterRender: function(){},
+        // afterResize: function(){},
+        // afterResponsive: function(isResponsive){},
+        // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+      });
+    });
+  </script>
+
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="js/responsify.js"></script>
+
 
   </body>
 
