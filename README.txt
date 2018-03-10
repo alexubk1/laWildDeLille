@@ -8,4 +8,4 @@ servira de guidline pour parler des problemes rencontre lors du developement du 
 
 Let's go!!!
 
-
+Nezzar: Ici je bosse pour ajouter des fullpage sur chaque page.
