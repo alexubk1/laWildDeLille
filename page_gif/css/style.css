@@ -12,11 +12,12 @@ body{
 }
 
 h1{
+  position: relative;
   text-align: center;
   font-family: Beauty;
   margin-top: 20vw;
   font-size: 8vw;
-  color: white;
+  color: yellow;
 }
 
 #titre{
@@ -36,7 +37,7 @@ h1{
 /* NAVBAR */
 .navbar-item{
   font-family: Beauty;
-  color: orange;
+  color: yellow;
   font-size: 1.8vw;
   margin-right: 4vw;
 }
