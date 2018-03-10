@@ -8,4 +8,5 @@ servira de guidline pour parler des problemes rencontre lors du developement du 
 
 Let's go!!!
 
-Nezzar: Ici je bosse pour ajouter des fullpage sur chaque page.
+Nezzar: Ici (fullPage)je bosse pour ajouter des fullpage sur chaque page et homogeneiser la navbar.
+Nezzar: Ici (CC: Content Creation) je bosse pour creer des div et section de contenue sur la page description.
