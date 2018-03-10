@@ -1,0 +1,77 @@
+.navbar-brand img {
+  object-fit: cover;
+  position: relative;
+}
+
+
+.navbar {
+  opacity: 0.8;
+  border-radius: 0;
+  margin-bottom: 0;
+  border: 0px solid;
+}
+
+.fp-slidesNav ul {
+  text-align: center;
+  color: yellow;
+}
+
+
+.fp-tableCell {
+  padding: 0;
+  vertical-align: baseline;
+}
+
+
+#fullpage {
+  height: 100vh;
+}
+
+#fullpage .section {
+  height: 100vh;
+  padding: 0;
+}
+
+.section-0-img .section-1-img .section-2-img .section-3-img {
+  width: 100%;
+  height: 100vh;
+}
+
+.section-0-img img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+}
+
+.text-div {
+  position: relative;
+  text-align: center;
+  word-wrap: normal;
+  font-size: 10vh;
+  vertical-align: middle;
+}
+
+
+.child-1 {
+  font-size: 10vh;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+
+h2 {
+  color: white;
+  vertical-align: middle;
+}
+
+.en-boite {
+}
+
+#section0 {
+  display: table;
+  width: 100%;
+  height: 100vh;
+	/* background: linear-gradient(rgba(255, 230, 6, 0.5),rgba(198, 180, 18, 0.5)); */
+}

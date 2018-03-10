@@ -2,7 +2,7 @@
 
 /* GENERAL */
 body{
-  background: linear-gradient(black,darkred)
+  /* background: linear-gradient(black,darkred) */
   /* background-image: url("../images/black_background.jpg"); */
 }
 
@@ -114,7 +114,7 @@ path{
 }
 
  .elevator{
-   background-color: darkred;
+   /* background-color: darkred; */
   /* background-image: url("../images/black_background.jpg"); */
 }
 

@@ -5,199 +5,67 @@
     <title>La wild de Lille</title>
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src='js/elevator.js'></script>
-    <script type="text/javascript" src="js/responsify.js"></script>
-    <script type="text/javascript" src="js/responsify.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar_and_full.css">
 
   </head>
   <body>
     <!-- Navbar, powered by Bulma -->
-    <nav class="navbar is-transparent is-fixed-top">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="../index.html">
-          <img src="images/wild_logo2.png" alt="Bulma: a modern CSS framework based on Flexbox">
-        </a>
-        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  	  <div class="container-fluid">
+  	    <!-- Brand and toggle get grouped for better mobile display -->
+  	    <div class="navbar-header">
+  	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  	        <span class="sr-only">Toggle navigation</span>
+  	        <span class="icon-bar"></span>
+  	        <span class="icon-bar"></span>
+  	        <span class="icon-bar"></span>
+  	      </button>
+  	      <a class="navbar-brand" href="#">
+  					<!-- <img src="images/wild_logo2.png" alt="logo de la Wild"> -->
+  				</a>
+  	    </div>
 
-      <div id="navbarExampleTransparentExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="../index.html">
-            Home
-          </a>
-          <a class="navbar-item" href="">
-            Inside the Wild
-          </a>
-          <a class="navbar-item" href="../page_gif/index.html">
-            Les Joies du de la Wild
-          </a>
-          <a class="navbar-item" href="../page_form/index.html">
-            Contacts
-          </a>
-          </div>
-        </div>
-      </div>
-    </nav>
+  	    <!-- Collect the nav links, forms, and other content for toggling -->
+  	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  	      <ul class="nav navbar-nav">
+            <li><a href="../index.html">Menu</a></li>
+  	        <li><a href="index.html">Description</a></li>
+  					<li><a href="../page_gif/index.html">Les joies</a></li>
+  					<li><a href="../page_form/index.html">Contact</a></li>
+  	      </ul>
+  	    </div><!-- /.navbar-collapse -->
+  	  </div><!-- /.container-fluid -->
+  	</nav>
+
     <!-- fullpage setup  -->
     <div id="fullpage">
+      <!-- Welcome fullpage -->
+      <div class="section section-0-img" >
+        <img src="images/bg7.jpg" alt="" data-focus-left="0.23" data-focus-top="0.23" data-focus-right="0.72" data-focus-bottom="0.78"/>
+        <div class="text-div" id="section1">
+          <h2 class="child-2 ">Inside the Wild</h2>
+        </div>
+      </div>
       <!-- People Section -->
       <div class="section">
         <div class="slide" style="position: relative;">
           <div class="wrapper" style="position: absolute; top:0; left:0;">
             <img src="images/bg9.jpg" alt="" data-focus-left="0.34" data-focus-top="0.22" data-focus-right="0.85" data-focus-bottom="0.88"/>
           </div>
-          <div class="tile">
-            <!-- The magical tile element! -->
-          </div>
-          <div class="box" style="position: absolute; top:0; left:0;">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-128x128">
-                  <img src="images/olivier.jpg" alt="Image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <div class="column people">
-                    <p>
-                      <strong>Olivier Trentesaux</strong> <small>@Olivier_is_boss_59</small>
-                      <br>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                    </p>
-                    <p>
-                      textbidondansunecolonequiclaque
-                      textbidondansunecolonequiclaque
-                      textbidondansunecolonequiclaque
-                      textbidondansunecolonequiclaque
-
-                    </p>
-                    <h2 style="text-align: center;">"[Not so smart quote here]"</h2>
-                  </div>
-                </div>
-                <nav class="level is-mobile">
-                  <div class="level-left">
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fas fa-reply"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fas fa-retweet"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fas fa-heart"></i></span>
-                    </a>
-                  </div>
-                </nav>
-              </div>
-            </article>
+        </div>
+        <div class="slide" style="position: relative;">
+          <div class="wrapper" style="position: absolute; top:0; left:0;">
+            <img src="images/bg9.jpg" alt="" data-focus-left="0.34" data-focus-top="0.22" data-focus-right="0.85" data-focus-bottom="0.88"/>
           </div>
         </div>
         <div class="slide" style="position: relative;">
           <div class="wrapper" style="position: absolute; top:0; left:0;">
             <img src="images/bg9.jpg" alt="" data-focus-left="0.34" data-focus-top="0.22" data-focus-right="0.85" data-focus-bottom="0.88"/>
           </div>
-          <div class="tile">
-            <!-- The magical tile element! -->
-          </div>
-          <div class="box" style="position: absolute; top:0; left:0;">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-128x128">
-                  <img src="images/lucas.png" alt="Image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <div class="column people">
-                    <p>
-                      <strong>Lucas Vancompernolle</strong> <small>@Lucas_tony_kellogs_69</small>
-                      <br>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                    </p>
-                    <p>
-                      textbidondansunecolonequiclaque
-                      textbidondansunecolonequiclaque
-                      textbidondansunecolonequiclaque
-                      textbidondansunecolonequiclaque
-                    </p>
-                    <h3 style="text-align: center;">"[Not so smart quote here]"</h3>
-                  </div>
-                </div>
-                <nav class="level is-mobile">
-                  <div class="level-left">
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fas fa-reply"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fas fa-retweet"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fas fa-heart"></i></span>
-                    </a>
-                  </div>
-                </nav>
-              </div>
-            </article>
-          </div>
-        </div>  <div class="slide" style="position: relative;">
-            <div class="wrapper" style="position: absolute; top:0; left:0;">
-              <img src="images/bg9.jpg" alt="" data-focus-left="0.34" data-focus-top="0.22" data-focus-right="0.85" data-focus-bottom="0.88"/>
-            </div>
-            <div class="tile">
-              <!-- The magical tile element! -->
-            </div>
-            <div class="box" style="position: absolute; top:0; left:0;">
-              <article class="media">
-                <div class="media-left">
-                  <figure class="image is-128x128">
-                    <img src="images/gaetan.png" alt="Image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <div class="column people">
-                      <p>
-                        <strong>Gaetan </strong> <small>@XXX_GAETAN_XXX</small>
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                      </p>
-                      <p>
-                        textbidondansunecolonequiclaque
-                        textbidondansunecolonequiclaque
-                        textbidondansunecolonequiclaque
-                        textbidondansunecolonequiclaque
-                        textbidondansunecolonequiclaque
-                        textbidondansunecolonequiclaque
-                        textbidondansunecolonequiclaque
-                        textbidondansunecolonequiclaque
-
-                      </p>
-                    </div>
-                  </div>
-                  <nav class="level is-mobile">
-                    <div class="level-left">
-                      <a class="level-item">
-                        <span class="icon is-small"><i class="fas fa-reply"></i></span>
-                      </a>
-                      <a class="level-item">
-                        <span class="icon is-small"><i class="fas fa-retweet"></i></span>
-                      </a>
-                      <a class="level-item">
-                        <span class="icon is-small"><i class="fas fa-heart"></i></span>
-                      </a>
-                    </div>
-                  </nav>
-                </div>
-              </article>
-            </div>
-          </div>
+        </div>
       </div>
       <!-- Student section -->
       <div class="section">
@@ -237,7 +105,11 @@
       </div>
     </footer>
     <!-- SCRIPT JAVASCRIPT -->
-
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src='js/elevator.js'></script>
+    <script type="text/javascript" src="js/responsify.js"></script>
+    <script type="text/javascript" src="js/responsify.min.js"></script>
     <!-- Elevator script -->
     <script>
       window.onload = function() {

@@ -9,107 +9,234 @@ include 'php/message.php'
 	<title>page 4</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" media="(min-width: 450px)" href="css/small_resolution.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" >
+	<link rel="stylesheet" type="text/css" href="css/navbar_and_full.css">
 </head>
 <body>
-	<section>
-		<div class="container">
-			<div class="row vertical-align">
-				<div class="col-md-5 col-xs-12">
-					<img src="images/Einstein.jpg" alt="photo d'Einstein" class="img_einstein">
-				</div>
-				<div class="col-md-7 col-xs-12">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l</p>
-				</div>
+
+	<!-- navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<!-- <img src="images/wild_logo2.png" alt="logo de la Wild"> -->
+				</a>
 			</div>
-			<div class="row vertical-align">
-				<div class="col-md-5 col-md-push-7 col-xs-12">
-					<img src="images/steeve_jobs.jpg" alt="photo steve jobs" class="img_steeve_jobs">
-				</div>
-				<div class="col-md-7 col-md-pull-5 col-xs-12">
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l</p>
-				</div>
-			</div>
-			<div class="row vertical-align">
-				<div class="col-md-5 col-xs-12">
-					<img src="images/mark.jpg" alt="photo mark zukerberg" class="img_mark">
-				</div>
-				<div class="col-md-7 col-xs-12">
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l</p>
-				</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html">Menu</a></li>
+					<li><a href="../page_description/index.html">Description</a></li>
+					<li><a href="../page_gif/index.html">Les joies</a></li>
+					<li><a href="index.html">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+<!-- welcome fullpage  -->
+	<div id="fullpage">
+		<div class="section section-0-img" >
+			<img src="images/bg6.jpg" alt="" data-focus-left="0.34" data-focus-top="0.15" data-focus-right="0.87" data-focus-bottom="0.79"/>
+			<div class="text-div" id="section0">
+				<h2 class="child-1 en-boite">Contact</h2>
 			</div>
 		</div>
-		<hr/>
-	</section>
 
-	<div class="comment">
-		<?php
-		$consultez="php/messages.txt";
-		readfile($consultez);
-		?>
-	</div>
-
-	<section class="formulaire"> 
-		<form action="" method="post">
-			<div>
-				<fieldset>
-					<legend>Votre Nom</legend>
-					<input type="text" name="pseudo">
-				</fieldset>
-				<fieldset>
-					<legend>Postez un message pour le livre d'or</legend>
-					<textarea class="textarea_lor" cols="40" rows="6" name="message"></textarea>
-				</fieldset>
-				<input type="submit" value="Envoyer" class="bouton" name="submitButton">
-
-				<!-- On va créer un lien vers une autre page pour ceux qui veulent consulter le livre d'or sans poster dedans -->
-				<p>Pour consulter simplement le livre d'or, <a href="php/consultezlo.php" target="_bank">cliquez ici</a>
-				</p>
-			</div>
-		</form>
-	</section>
-	<section id="contact">
-		<div class="section-content">
-			<h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Contactez-nous</span></h1>
-			<h3 class="subtext">Veuillez nous excuser par avance pour les délais de réponse, notre assistant Gaëtan est un peu lent..</h3>
-		</div>
-		<div class="contact-section">
-			<div class="container">
-				<form method="post" action="php/traitement_formulaire.php">
-					<div class="col-md-6 col-xs-12 ">
-						<div class="form-group">
-							<label for="exampleInputUsername">Nom</label>
-							<input type="text" id="nom" name="nom" tabindex="1" class="form-control" placeholder="Nom" />
+		<div class="section" id="normalScroll">
+			<section class="margB margT">
+				<div class="container">
+					<div class="row vertical-align">
+						<div class="col-md-5 col-xs-12">
+							<img src="images/Einstein.jpg" alt="photo d'Einstein" class="img_einstein">
 						</div>
-						<div class="form-group">
-							<label for="exampleInputfirstname">Prenom</label>
-							<input type="text" id="prenom" name="prenom" tabindex="5" class="form-control" placeholder="Prenom" />
-						</div>
-						<div class="form-group">
-							<label for="exampleInputEmail">Email :</label>
-							<input type="text" class="form-control" id="email" name="email" tabindex="2" placeholder="Email" />
+						<div class="col-md-7 col-xs-12">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l</p>
 						</div>
 					</div>
-					<div class="col-md-6 col-xs-12 deux">
-						<div class="form-group">
-							<label for="exampleInputObjet">Objet :</label>
-							<input type="text" class="form-control" id="objet" name="objet" tabindex="3" placeholder="Objet" />
+					<div class="row vertical-align">
+						<div class="col-md-5 col-md-push-7 col-xs-12">
+							<img src="images/steeve_jobs.jpg" alt="photo steve jobs" class="img_steeve_jobs">
 						</div>
-						<div class="form-group">
-							<label for="description" for="message">Message :</label>
-							<textarea class="form-control" id="message" name="message" tabindex="4" placeholder="Messsage"></textarea>
+						<div class="col-md-7 col-md-pull-5 col-xs-12">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l</p>
 						</div>
-						<div>
-							<input type="submit" name="envoi" value="Envoyer le formulaire !" class="btn btn-default submit" aria-hidden="true" />
+					</div>
+					<div class="row vertical-align">
+						<div class="col-md-5 col-xs-12">
+							<img src="images/mark.jpg" alt="photo mark zukerberg" class="img_mark">
 						</div>
+						<div class="col-md-7 col-xs-12">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l</p>
+						</div>
+					</div>
+				</div>
+				<hr/>
+			</section>
+
+			<div class="comment">
+				<?php
+				$consultez="php/messages.txt";
+				readfile($consultez);
+				?>
+			</div>
+
+			<section class="formulaire">
+				<form action="" method="post">
+					<div>
+						<fieldset>
+							<legend>Votre Nom</legend>
+							<input type="text" name="pseudo">
+						</fieldset>
+						<fieldset>
+							<legend>Postez un message pour le livre d'or</legend>
+							<textarea class="textarea_lor" cols="40" rows="6" name="message"></textarea>
+						</fieldset>
+						<input type="submit" value="Envoyer" class="bouton" name="submitButton">
+
+						<!-- On va créer un lien vers une autre page pour ceux qui veulent consulter le livre d'or sans poster dedans -->
+						<p>Pour consulter simplement le livre d'or, <a href="php/consultezlo.php" target="_bank">cliquez ici</a>
+						</p>
 					</div>
 				</form>
-			</div>
-		</div>
+			</section>
 
-	</section>
+			<section id="contact">
+				<div class="section-content">
+					<h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Contactez-nous</span></h1>
+					<h3 class="subtext">Veuillez nous excuser par avance pour les délais de réponse, notre assistant Gaëtan est un peu lent..</h3>
+				</div>
+				<div class="contact-section">
+					<div class="container">
+						<form method="post" action="php/traitement_formulaire.php">
+							<div class="col-md-6 col-xs-12 ">
+								<div class="form-group">
+									<label for="exampleInputUsername">Nom</label>
+									<input type="text" id="nom" name="nom" tabindex="1" class="form-control" placeholder="Nom" />
+								</div>
+								<div class="form-group">
+									<label for="exampleInputfirstname">Prenom</label>
+									<input type="text" id="prenom" name="prenom" tabindex="5" class="form-control" placeholder="Prenom" />
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail">Email :</label>
+									<input type="text" class="form-control" id="email" name="email" tabindex="2" placeholder="Email" />
+								</div>
+							</div>
+							<div class="col-md-6 col-xs-12 deux">
+								<div class="form-group">
+									<label for="exampleInputObjet">Objet :</label>
+									<input type="text" class="form-control" id="objet" name="objet" tabindex="3" placeholder="Objet" />
+								</div>
+								<div class="form-group">
+									<label for="description" for="message">Message :</label>
+									<textarea class="form-control" id="message" name="message" tabindex="4" placeholder="Messsage"></textarea>
+								</div>
+								<div>
+									<input type="submit" name="envoi" value="Envoyer le formulaire !" class="btn btn-default submit" aria-hidden="true" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</section>
+		</div>
+	</div>
+	<!-- fullPage JS -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#fullpage').fullpage({
+				//Navigation
+				// menu: '#menu',
+				// lockAnchors: false,
+				// anchors:['firstPage', 'secondPage'],
+				// navigation: true,
+				// navigationPosition: 'right',
+				// navigationTooltips: ['firstSlide', 'secondSlide'],
+				// showActiveTooltip: false,
+				// slidesNavigation: false,
+				// slidesNavPosition: 'bottom',
+
+				// //Scrolling
+				// css3: true,
+				// scrollingSpeed: 700,
+				// autoScrolling: true,
+				// fitToSection: true,
+				// fitToSectionDelay: 1000,
+				scrollBar: true,
+				// easing: 'easeInOutCubic',
+				// easingcss3: 'ease',
+				// loopBottom: false,
+				// loopTop: false,
+				// loopHorizontal: true,
+				// continuousVertical: false,
+				// continuousHorizontal: false,
+				// scrollHorizontally: false,
+				// interlockedSlides: false,
+				// dragAndMove: false,
+				// offsetSections: false,
+				// resetSliders: false,
+				fadingEffect: true,
+				normalScrollElements: '#normalScroll',
+				// scrollOverflow: false,
+				// scrollOverflowReset: false,
+				// scrollOverflowOptions: null,
+				// touchSensitivity: 15,
+				// normalScrollElementTouchThreshold: 5,
+				// bigSectionsDestination: null,
+
+				// //Accessibility
+				// keyboardScrolling: true,
+				// animateAnchor: true,
+				// recordHistory: true,
+
+				// //Design
+				// controlArrows: true,
+				// verticalCentered: true,
+				// sectionsColor : ['#ccc', '#fff'],
+				// paddingTop: '3em',
+				// paddingBottom: '10px',
+				// fixedElements: '#header, .footer',
+				// responsiveWidth: 0,
+				// responsiveHeight: 0,
+				// responsiveSlides: false,
+				// parallax: false,
+				// parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+				// //Custom selectors
+				// sectionSelector: '.section',
+				// slideSelector: '.slide',
+
+				// lazyLoading: true,
+
+				// //events
+				// onLeave: function(index, nextIndex, direction){},
+				// afterLoad: function(anchorLink, index){},
+				// afterRender: function(){},
+				// afterResize: function(){},
+				// afterResponsive: function(isResponsive){},
+				// afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+				// onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+			});
+		});
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/responsify.js"></script>
+	<script type="text/javascript" src="js/responsify.min.js"></script>
 
 </body>
 </html>
