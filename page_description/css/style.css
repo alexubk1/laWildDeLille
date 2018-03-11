@@ -7,6 +7,11 @@ body {
   height: 100vh;
 }
 
+@font-face {
+    font-family: Beauty;
+    src: url("../fonts/Beauty.ttf");
+}
+
 /* #fullpage .section {
   height: 100vh;
   padding: 0;
@@ -23,6 +28,16 @@ body {
 .navbar {
   opacity: 0.8;
 }
+
+/* NAVBAR */
+.navbar-nav{
+  font-family: Beauty;
+  color: yellow;
+  font-size: 1.8vw;
+  margin-right: 4vw;
+}
+
+
 
 /* -------------------------------------------- */
 /* PEOPLE THUMBNAIL CSS */

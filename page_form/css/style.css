@@ -9,11 +9,26 @@ font-family: 'Oleo Script';
 src: url('font/OleoScript-Regular.ttf');
 }
 
+@font-face {
+    font-family: Beauty;
+    src: url("../fonts/Beauty.ttf");
+}
+
 .content-header{
   font-family: 'Oleo Script', cursive;
   color:#ffd11a;
   font-size: 45px;
 }
+
+/* NAVBAR */
+.navbar-nav{
+  font-family: Beauty;
+  color: yellow;
+  font-size: 1.8vw;
+  margin-right: 4vw;
+}
+
+
 
 .section-content{
   text-align: center;
@@ -110,3 +125,19 @@ textarea.form-control {
 .margT {
   margin-top: 35px;
 }
+
+/* BEGINING FOOTER CSS */
+
+footer {
+  border-top: solid 5px yellow;
+  /* background-color: orange; */
+}
+
+#myFooter {
+
+}
+
+.footer-copyright {
+  border-top: solid 1px yellow;
+}
+/* END FOOTER */
