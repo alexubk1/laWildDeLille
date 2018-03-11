@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <title>La wild de Lille</title>
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Footer-with-button-logo.css">
     <link rel="stylesheet" type="text/css" href="css/navbar_and_full.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
   </head>
   <body>
@@ -39,12 +41,41 @@
   	  </div><!-- /.container-fluid -->
   	</nav>
 
+    <!-- <div class="sticky-container">
+      <ul class="sticky">
+        <li>
+            <img src="images/facebook-circle.png" width="32" height="32">
+            <p><a href="https://www.facebook.com/codexworld" target="_blank">Like Us on<br>Facebook</a></p>
+        </li>
+        <li>
+            <img src="images/twitter-circle.png" width="32" height="32">
+            <p><a href="https://twitter.com/codexworldblog" target="_blank">Follow Us on<br>Twitter</a></p>
+        </li>
+        <li>
+            <img src="images/gplus-circle.png" width="32" height="32">
+            <p><a href="https://plus.google.com/codexworld" target="_blank">Follow Us on<br>Google+</a></p>
+        </li>
+        <li>
+            <img src="images/linkedin-circle.png" width="32" height="32">
+            <p><a href="https://www.linkedin.com/company/codexworld" target="_blank">Follow Us on<br>LinkedIn</a></p>
+        </li>
+        <li>
+            <img src="images/youtube-circle.png" width="32" height="32">
+            <p><a href="http://www.youtube.com/codexworld" target="_blank">Subscribe on<br>YouYube</a></p>
+        </li>
+        <li>
+            <img src="images/pin-circle.png" width="32" height="32">
+            <p><a href="https://www.pinterest.com/codexworld" target="_blank">Follow Us on<br>Pinterest</a></p>
+        </li>
+      </ul>
+    </div> -->
+
     <!-- fullpage setup  -->
     <div id="fullpage">
       <div class="section section-0-img" >
         <img src="images/welcome.gif" alt="" data-focus-left="0.34" data-focus-top="0.15" data-focus-right="0.87" data-focus-bottom="0.79"/>
         <div class="text-div" id="section0">
-          <h2 class="child-2 noir crossed-over">BIENVENUE</h2>
+          <!-- <h2 class="child-2 noir crossed-over">BIENVENUE</h2> -->
         </div>
       </div>
       <div class="section section-1-img" >
@@ -59,17 +90,67 @@
           <h2 class="child-2">Les joies de la Wild</h2>
         </div>
       </div>
-      <div class="section section-3-img" >
-        <img src="images/bg6.jpg" alt="" data-focus-left="0.40" data-focus-top="0.10" data-focus-right="0.82" data-focus-bottom="0.80"/>
-        <div class="text-div" id="section3">
-          <h2 class="child-2">Contactez-Nous!</h2>
+      <div class="section" id="normalScroll">
+        <div class=" section-3-img"  >
+          <img src="images/bg6.jpg" alt="" data-focus-left="0.40" data-focus-top="0.10" data-focus-right="0.82" data-focus-bottom="0.80"/>
+          <div class="text-div" id="section3">
+            <h2 class="child-2">Contactez-Nous!</h2>
+          </div>
         </div>
+        <footer id="myFooter">
+            <div class="container footer-container">
+                <div class="row ">
+                    <div class="col-sm-3">
+                        <h2 class="logo">LOGO</h2>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Get started</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sign up</a></li>
+                            <li><a href="#">Downloads</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>About us</h5>
+                        <ul>
+                            <li><a href="#">Company Information</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help desk</a></li>
+                            <li><a href="#">Forums</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="social-networks">
+                            <a href="#" class="twitter"><img src="images/wild_logo.png" alt="fb"/></a>
+                            <a href="#" class="facebook"><img src="images/facebook.png" alt="fb"/></a>
+                            <a href="#" class="google"><img src="images/twitter.png" alt="fb"/></a>
+                            <a href="#" class="google"><img src="images/reddit.png" alt="fb"/></a>
+
+                        </div>
+                        <button type="button" class="btn btn-default">Contact us</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2016 Copyright and Stuff <span><img src="images/like.png" /></span> Made with love by Wild Code School </p>
+            </div>
+        </footer>
       </div>
     </div>
     <!-- footer -->
 
 
     <!-- Srcipt JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/responsify.js"></script>
     <script type="text/javascript" src="js/responsify.min.js"></script>
@@ -104,8 +185,8 @@
           // menu: '#menu',
           // lockAnchors: false,
           // anchors:['firstPage', 'secondPage'],
-          navigation: true,
-          navigationPosition: 'right',
+          // navigation: true,
+          // navigationPosition: 'right',
           // navigationTooltips: ['firstSlide', 'secondSlide'],
           // showActiveTooltip: false,
           // slidesNavigation: false,
@@ -114,10 +195,10 @@
           // //Scrolling
           // css3: true,
           // scrollingSpeed: 700,
-          // autoScrolling: true,
-          // fitToSection: true,
+          // autoScrolling: false,
+          fitToSection: false,
           // fitToSectionDelay: 1000,
-          // scrollBar: false,
+          scrollBar: true,
           // easing: 'easeInOutCubic',
           // easingcss3: 'ease',
           // loopBottom: false,
@@ -131,7 +212,7 @@
           // offsetSections: false,
           // resetSliders: false,
           // fadingEffect: false,
-          // normalScrollElements: '#element1, .element2',
+          normalScrollElements: '#normalScroll',
           // scrollOverflow: false,
           // scrollOverflowReset: false,
           // scrollOverflowOptions: null,
@@ -150,7 +231,7 @@
           // sectionsColor : ['#ccc', '#fff'],
           // paddingTop: '3em',
           // paddingBottom: '10px',
-          // fixedElements: '#header, .footer',
+          fixedElements: '#myFooter',
           // responsiveWidth: 0,
           // responsiveHeight: 0,
           // responsiveSlides: false,

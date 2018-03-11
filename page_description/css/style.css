@@ -7,6 +7,11 @@ body {
   height: 100vh;
 }
 
+@font-face {
+    font-family: Beauty;
+    src: url("../fonts/Beauty.ttf");
+}
+
 /* #fullpage .section {
   height: 100vh;
   padding: 0;
@@ -21,13 +26,71 @@ body {
 }
 
 .navbar {
-  background: linear-gradient(rgba(255, 255, 255, 1) ,rgba(255, 255, 255, 0));
+  opacity: 0.8;
+}
+
+/* NAVBAR */
+.navbar-nav{
+  font-family: Beauty;
+  color: yellow;
+  font-size: 1.8vw;
+  margin-right: 4vw;
+}
+
+h2 {
+  font-size: 80px;
+  color: Yellow;
+  vertical-align: middle;
+  font-family: Beauty;
+
 }
 
 
-.navbar {
-  background-color: transparent;
+/* -------------------------------------------- */
+/* PEOPLE THUMBNAIL CSS */
+
+.thumbnail {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  border-bottom: solid 5px yellow;
+
 }
+
+
+.thumbnail img {
+  margin: 10px 0 10px 10px;
+  margin-right: 0;
+  height:200px;
+  width:200px;
+  border-bottom: solid 5px yellow;
+  border-radius: 10px;
+}
+
+.thumbnail h3,p {
+  text-align: center;
+}
+
+/* END PEOPLE THUMBNAIL CSS */
+/* -------------------------------------------- */
+
+
+
+
+/* BEGINING FOOTER CSS */
+
+footer {
+  border-top: solid 5px yellow;
+  /* background-color: orange; */
+}
+
+#myFooter {
+
+}
+
+.footer-copyright {
+  border-top: solid 1px yellow;
+}
+/* END FOOTER */
 
 
 
@@ -144,11 +207,6 @@ body {
 } */
 
 
-
-h2 {
-  color: white;
-  vertical-align: middle;
-}
 
 .text-div {
   text-align: center;

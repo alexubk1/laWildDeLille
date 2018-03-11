@@ -33,20 +33,20 @@ h1{
   margin-bottom:5vw;
   color: yellow;
 }
-
 /* NAVBAR */
-.navbar-item{
+.navbar-nav{
   font-family: Beauty;
   color: yellow;
   font-size: 1.8vw;
   margin-right: 4vw;
 }
 
+
 /* .navbar{
   background-color: transparent;
   height: 7vw;
 } */
-/* 
+/*
 .navbar-brand{
   height: 7vw
 } */
@@ -124,3 +124,19 @@ path{
   -webkit-box-shadow: 0px 0px 20px yellow;
   -moz-box-shadow: 0px 0px 20px yellow;
 }
+
+/* BEGINING FOOTER CSS */
+
+footer {
+  border-top: solid 5px yellow;
+  /* background-color: orange; */
+}
+
+#myFooter {
+
+}
+
+.footer-copyright {
+  border-top: solid 1px yellow;
+}
+/* END FOOTER */
