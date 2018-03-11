@@ -23,10 +23,13 @@ src: url('font/OleoScript-Regular.ttf');
 /* NAVBAR */
 .navbar-nav{
   font-family: Beauty;
-  color: yellow;
+  font-weight: bold;
+  color: black;
   font-size: 1.8vw;
   margin-right: 4vw;
 }
+
+
 
 h2 {
   font-size: 80px;
@@ -54,7 +57,7 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098D1;
+  background: yellow;
   height: 4px;
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
