@@ -178,11 +178,15 @@ footer {
 
 .crossed-over {
   text-decoration: line-through;
+
 }
 
 h2 {
-  color: white;
+  font-size: 80px;
+  color: Yellow;
   vertical-align: middle;
+  font-family: Beauty;
+
 }
 
 .text-div {

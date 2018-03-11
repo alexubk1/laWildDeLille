@@ -28,6 +28,13 @@ src: url('font/OleoScript-Regular.ttf');
   margin-right: 4vw;
 }
 
+h2 {
+  font-size: 80px;
+  color: Yellow;
+  vertical-align: middle;
+  font-family: Beauty;
+
+}
 
 
 .section-content{

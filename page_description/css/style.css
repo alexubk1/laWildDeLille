@@ -37,6 +37,13 @@ body {
   margin-right: 4vw;
 }
 
+h2 {
+  font-size: 80px;
+  color: Yellow;
+  vertical-align: middle;
+  font-family: Beauty;
+
+}
 
 
 /* -------------------------------------------- */
@@ -200,11 +207,6 @@ footer {
 } */
 
 
-
-h2 {
-  color: white;
-  vertical-align: middle;
-}
 
 .text-div {
   text-align: center;
