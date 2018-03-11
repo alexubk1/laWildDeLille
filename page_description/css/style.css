@@ -21,15 +21,34 @@ body {
 }
 
 .navbar {
-  background: linear-gradient(rgba(255, 255, 255, 1) ,rgba(255, 255, 255, 0));
+  opacity: 0.8;
+}
+
+/* -------------------------------------------- */
+/* PEOPLE THUMBNAIL CSS */
+
+.thumbnail {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  border-bottom: solid 5px yellow;
 }
 
 
-.navbar {
-  background-color: transparent;
+.thumbnail img {
+  margin: 10px 0 10px 10px;
+  margin-right: 0;
+  height:200px;
+  width:200px;
+  border-bottom: solid 5px yellow;
+  border-radius: 10px;
 }
 
+.thumbnail h3,p {
+  text-align: center;
+}
 
+/* END PEOPLE THUMBNAIL CSS */
+/* -------------------------------------------- */
 
 .fp-slidesNav ul {
   text-align: center;
