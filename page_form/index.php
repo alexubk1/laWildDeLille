@@ -46,12 +46,12 @@ include 'php/message.php'
 
 	<div class="comment">
 		<?php
-		$consultez="php/messages.txt";
+		$consultez="messages.txt";
 		readfile($consultez);
 		?>
 	</div>
 
-	<section class="formulaire"> 
+	<section class="formulaire">
 		<form action="" method="post">
 			<div>
 				<fieldset>

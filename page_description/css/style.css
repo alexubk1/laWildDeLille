@@ -57,6 +57,8 @@ h2 {
   /* background-image: url('../images/wood.jpeg'); */
   border-radius: 10px;
   border-bottom: solid 5px yellow;
+  margin-top: 100px;
+
 
 }
 
@@ -77,7 +79,28 @@ h2 {
 /* END PEOPLE THUMBNAIL CSS */
 /* -------------------------------------------- */
 
+/* -------------------------------------------- */
+/* Hardware THUMBNAIL1 CSS */
 
+
+
+
+.thumbnail img.chair{
+  margin: 10px 0px 10px 10px;
+  margin-top: 10px;
+  margin-right: 0;
+  height:400px;
+  width:400px;
+  border-bottom: solid 5px yellow;
+  border-radius: 10px;
+
+}
+
+
+
+
+/* -------------------------------------------- */
+/* END Hardware THUMBNAIL1 CSS */
 
 
 /* BEGINING FOOTER CSS */
