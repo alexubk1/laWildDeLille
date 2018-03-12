@@ -1,14 +1,77 @@
-.navbar-brand img {
-  object-fit: cover;
-  position: relative;
+/*NAVBAR*/
+
+.navbar-nav{
+  font-family: Beauty;
+  font-weight: bold;
+  color: black;
+  font-size: 1.8vw;
+  margin-right: 4vw;
 }
 
-
 .navbar {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0;
   margin-bottom: 0;
-  border: 0px solid;
+  /* margin-top: 20px; */
+  border-bottom: 3px solid yellow;
+  font-family: Beauty;
+  color: black;
+}
+
+.navbar-brand img {
+  width: 80px;
+  height: 80px;
+  max-width: 8vw;
+  max-height: 8vw;
+}
+
+.menus{
+  color: black !important;
+  font-size: 1.5vw;
+  margin-right: 5px;
+}
+
+/*HOVER dans la navbar*/
+
+/* Buzz */
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 .fp-slidesNav ul {
