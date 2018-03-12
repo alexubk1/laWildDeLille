@@ -56,8 +56,11 @@ h2 {
   color: white;
   /* background-image: url('../images/wood.jpeg'); */
   border-radius: 10px;
+  border-left: solid 2px grey;
+  border-right: solid 2px grey;
+  border-top: solid 2px grey;
   border-bottom: solid 5px yellow;
-
+  box-shadow: 6px 6px 2px grey;
 }
 
 
@@ -66,8 +69,12 @@ h2 {
   margin-right: 0;
   height:200px;
   width:200px;
+  border-left: solid 2px grey;
+  border-right: solid 2px grey;
+  border-top: solid 2px grey;
   border-bottom: solid 5px yellow;
   border-radius: 10px;
+  box-shadow: 6px 6px 2px grey;
 }
 
 .thumbnail h3,p {
@@ -213,6 +220,24 @@ footer {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
 
 
 
