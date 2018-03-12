@@ -42,6 +42,10 @@ h1{
   margin-right: 4vw;
 }
 
+.footer-container {
+  padding-bottom: 20px;
+}
+
 
 /* Underline Reveal */
 .hvr-underline-reveal {
@@ -166,10 +170,6 @@ path{
 footer {
   border-top: solid 5px yellow;
   /* background-color: orange; */
-}
-
-#myFooter {
-
 }
 
 .footer-copyright {
