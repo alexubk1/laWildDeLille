@@ -1,19 +1,13 @@
-/*GENERAL*/
-
-@font-face {
-    font-family: Beauty;
-    src: url("../fonts/Beauty.ttf");
-}
-
-/*FORMULAIRE*/
-
-.submit {
-    font-size: 1.1em;
-    float: center;
-    width: 200px;
-}
-
 /*FOOTER*/
+
+footer {
+  border-top: solid 5px yellow;
+}
+
+.footer-copyright {
+  border-top: solid 1px yellow;
+  border-bottom: solid 1px yellow;
+}
 
 #myFooter {
     background-color: #3c3d41;
@@ -121,7 +115,6 @@
   width: 200px;
 }
 
-
 /* CSS used for positioning the footers at the bottom of the page. */
 /* You can remove this. */
 
@@ -146,12 +139,4 @@ body{
 #myFooter{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
-}
-
-/*MEDIA QUERIES*/
-
-@media screen and (max-width: 767px) {
-    #myFooter {
-        text-align: center;
-    }
 }
