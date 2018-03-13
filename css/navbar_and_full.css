@@ -17,12 +17,13 @@
   font-family: Beauty;
   color: black;
 }
+.navbar-brand {
+  padding: 5px;
+}
 
 .navbar-brand img {
-  width: 80px;
-  height: 80px;
-  max-width: 8vw;
-  max-height: 8vw;
+  position: relative;;
+  height: 100%;
 }
 
 .menus{
