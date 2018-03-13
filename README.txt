@@ -10,3 +10,5 @@ Let's go!!!
 
 Nezzar: Ici (fullPage)je bosse pour ajouter des fullpage sur chaque page et homogeneiser la navbar.
 Nezzar: Ici (CC: Content Creation) je bosse pour creer des div et section de contenue sur la page description.
+
+Nezzar: Branche nezzar...
