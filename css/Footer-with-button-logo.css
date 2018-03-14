@@ -1,7 +1,35 @@
+/*GENERAL*/
+
+@font-face {
+    font-family: Beauty;
+    src: url("../fonts/Beauty.ttf");
+}
+
+/*FORMULAIRE*/
+
+.submit {
+    font-size: 1.1em;
+    float: center;
+    width: 200px;
+}
+
+/*FOOTER*/
+
+footer {
+  border-top: solid 5px yellow;
+}
+
+.footer-copyright {
+  border-top: solid 1px yellow;
+  border-bottom: solid 1px yellow;
+}
+
 #myFooter {
     background-color: #3c3d41;
     color: white;
     padding-top: 30px;
+    font-family: Beauty;
+    font-size: 1.25vw;
 }
 
 #myFooter .footer-copyright {
@@ -32,14 +60,13 @@
 }
 
 #myFooter h5 {
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
+    font-size: 2vw;
+    color: orange;
     margin-top: 30px;
 }
 
 #myFooter h2 a{
-    font-size: 50px;
+    font-size: 2vw;
     text-align: center;
     color: #fff;
 }
@@ -86,20 +113,21 @@
 
 #myFooter .btn {
     color: white;
-    background-color: #d84b6b;
+    background-color: #FF8000;
+    border-color: #EEFF00;
     border-radius: 20px;
     border: none;
-    width: 150px;
+    width: 200px;
     display: block;
     margin: 0 auto;
     margin-top: 10px;
     line-height: 25px;
+    font-size: 1.5vw;
 }
 
-@media screen and (max-width: 767px) {
-    #myFooter {
-        text-align: center;
-    }
+.img_logo {
+  height: 200px;
+  width: 200px;
 }
 
 
@@ -127,4 +155,15 @@ body{
 #myFooter{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+    .hvr-buzz {
+      font-size: 5vw;
+    }
 }
