@@ -96,7 +96,6 @@ textarea.form-control {
 
 .formulaire{
 	text-align: center;
-	max-width: 100%;
 }
 
 legend,.legend,label{
@@ -104,25 +103,13 @@ legend,.legend,label{
 }
 .comment{
 	overflow-y: scroll;
-	height: 300px;
+	height: 350px;
 	padding: 20px;
 	margin: 50px;
 	border: 2px black solid	;
 	box-shadow: 4px 4px 18px 10px #888888;
   background-color:  #ffe6e6;
 }
-.textarea_lor{
-	max-width: 100%;
-}
-
-.margB {
-  margin-bottom: 35px;
-}
-.margT {
-  margin-top: 35px;
-}
-
-
 .section-content{
   text-align: center;
 }
