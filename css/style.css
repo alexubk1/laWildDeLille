@@ -17,20 +17,91 @@ body {
     src: url("../fonts/Beauty.ttf");
 }
 
-/* NAVBAR */
-.navbar-nav{
-  font-family: Beauty;
-  font-weight: bold;
-  color: black;
-  font-size: 1.8vw;
-  margin-right: 4vw;
+@font-face {
+    font-family: Prototype;
+    src: url("../fonts/Prototype.ttf");
 }
 
 
+/*Style des élémets sur chaque fullpage */
+#fullpage a{
+    text-decoration: none !important;/*Pour que le lien ne soit plus "souligné"...*/
+    color: yellow !important; /*ça reste un exemple*/
+    text-shadow:0px 0px 0.25em black;
+}
 
+/* Wobble Horizontal */
+@-webkit-keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.hvr-wobble-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
+  -webkit-animation-name: hvr-wobble-horizontal;
+  animation-name: hvr-wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
 
-
-
+/* FIN de Style des élémets sur chaque fullpage */
 
 /* BEGINING FOOTER CSS */
 
@@ -181,6 +252,7 @@ h2 {
   color: Yellow;
   vertical-align: middle;
   font-family: Beauty;
+  text-shadow:0px 0px 0.25em black;
 
 }
 
@@ -203,8 +275,13 @@ h2 {
 .child-2 {
   display: table-cell;
   vertical-align: middle;
+  font-size: 5vw;
 }
 
+span {
+  font-size: 3vw;
+  text-shadow:0px 0px 0.25em black;
+}
 
 /* Underline Reveal */
 .hvr-underline-reveal {

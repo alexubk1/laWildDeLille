@@ -1,3 +1,14 @@
+/* BEGINING FOOTER CSS */
+
+footer {
+  border-top: solid 5px yellow;
+  /* background-color: orange; */
+}
+
+.footer-copyright {
+  border-top: solid 1px yellow;
+}
+
 #myFooter {
     background-color: #3c3d41;
     color: white;
@@ -91,7 +102,7 @@
     border-color: #EEFF00;
     border-radius: 20px;
     border: none;
-    width: 150px;
+    width: 180px;
     display: block;
     margin: 0 auto;
     margin-top: 10px;
@@ -99,18 +110,15 @@
     font-size: 1.5vw;
 }
 
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+
 .img_logo {
   height: 200px;
   width: 200px;
 }
-
-
-@media screen and (max-width: 767px) {
-    #myFooter {
-        text-align: center;
-    }
-}
-
 
 /* CSS used for positioning the footers at the bottom of the page. */
 /* You can remove this. */
@@ -133,19 +141,5 @@ body{
    min-height: 200px;
 }
 
-#myFooter{
-   flex: 0 0 auto;
-   -webkit-flex: 0 0 auto;
-}
 
-
-/*MEDIA QUERIES*/
-
-@media screen and (max-width: 767px) {
-    #myFooter {
-        text-align: center;
-    }
-    .hvr-buzz {
-      font-size: 5vw;
-    }
-}
+/* END FOOTER */

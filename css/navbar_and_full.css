@@ -1,11 +1,10 @@
 /*NAVBAR*/
 
 .navbar-nav{
-  font-family: Beauty;
-  font-weight: bold;
+  font-family: Prototype;
   color: black;
   font-size: 1.8vw;
-  margin-right: 4vw;
+  margin-right: 5vw;
 }
 
 .navbar {
@@ -17,17 +16,18 @@
   font-family: Beauty;
   color: black;
 }
+.navbar-brand {
+  padding: 5px;
+}
 
 .navbar-brand img {
-  width: 80px;
-  height: 80px;
-  max-width: 8vw;
-  max-height: 8vw;
+  position: relative;;
+  height: 100%;
 }
 
 .menus{
   color: black !important;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
   margin-right: 5px;
 }
 
