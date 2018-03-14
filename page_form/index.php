@@ -34,7 +34,6 @@ include 'php/message.php'
 
 </head>
 <header>
-	<!-- navbar -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -45,7 +44,7 @@ include 'php/message.php'
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="index.html">
 					<img src="images/wild_logo3.png" alt="logo de la Wild">
 				</a>
 			</div>
@@ -54,14 +53,12 @@ include 'php/message.php'
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class="hvr-buzz"><a class="menus" href="../index.html">Menu</a></li>
-					<li class="hvr-buzz"><a class="menus" href="index.html">Inside the Wild</a></li>
+					<li class="hvr-buzz"><a class="menus" href="../page_description/index.html">Inside the Wild</a></li>
 					<li class="hvr-buzz"><a class="menus" href="../page_gif/index.html">Les joies de la Wild</a></li>
-					<li class="hvr-buzz"><a class="menus" href="../page_form/index.html">Contact</a></li>
+					<li class="hvr-buzz"><a class="menus" href="../page_form/index.php">Contact</a></li>
 				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
 	</nav>
 </header>
 
@@ -73,113 +70,110 @@ include 'php/message.php'
 			<h2 class="child-1 en-boite">Contact</h2>
 		</div>
 	</div>
-
-	<div class="section" id="normalScroll">
+	<section class="formulaire">
 		<div class="comment">
 			<?php
 			$consultez="php/messages.txt";
 			readfile($consultez);
 			?>
 		</div>
+		<form action="" method="post">
+			<div>
+				<fieldset>
+					<legend>Votre Nom</legend>
+					<input type="text" name="pseudo">
+				</fieldset>
+				<fieldset>
+					<legend>Postez un message pour le livre d'or</legend>
+					<textarea cols="60" rows="6" name="message"></textarea>
+				</fieldset>
+				<input type="submit" value="Envoyer" class="btn" name="submitButton">
 
-		<section class="formulaire">
-			<form action="" method="post">
-				<div>
-					<fieldset>
-						<legend>Votre Nom</legend>
-						<input type="text" name="pseudo">
-					</fieldset>
-					<fieldset>
-						<legend>Postez un message pour le livre d'or</legend>
-						<textarea class="textarea_lor" cols="60" rows="6" name="message"></textarea>
-					</fieldset>
-					<input type="submit" value="Envoyer" class="btn btn-default" name="submitButton">
-
-					<!-- On va créer un lien vers une autre page pour ceux qui veulent consulter le livre d'or sans poster dedans -->
-					<p>Pour consulter simplement le livre d'or, <a href="php/consultezlo.php" target="_bank">cliquez ici</a>
-					</p>
-				</div>
-			</form>
-		</section>
-
-		<section id="contact">
-			<div class="section-content">
-				<h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Contactez-nous</span></h1>
+				<!-- On va créer un lien vers une autre page pour ceux qui veulent consulter le livre d'or sans poster dedans -->
+				<p>Pour consulter simplement le livre d'or, <a href="php/consultezlo.php" target="_bank">cliquez ici</a>
+				</p>
 			</div>
-			<div class="contact-section">
-				<div class="container">
-					<form method="post" action="php/traitement_formulaire.php">
-						<div class="col-md-6 col-xs-12 ">
-							<div class="form-group">
-								<label for="exampleInputUsername">Nom</label>
-								<input type="text" id="nom" name="nom" tabindex="1" class="form-control" placeholder="Nom" />
-							</div>
-							<div class="form-group">
-								<label for="exampleInputfirstname">Prenom</label>
-								<input type="text" id="prenom" name="prenom" tabindex="5" class="form-control" placeholder="Prenom" />
-							</div>
-							<div class="form-group">
-								<label for="exampleInputEmail">Email :</label>
-								<input type="text" class="form-control" id="email" name="email" tabindex="2" placeholder="Email" />
-							</div>
-						</div>
-						<div class="col-md-6 col-xs-12 deux">
-							<div class="form-group">
-								<label for="exampleInputObjet">Objet :</label>
-								<input type="text" class="form-control" id="objet" name="objet" tabindex="3" placeholder="Objet" />
-							</div>
-							<div class="form-group">
-								<label for="description" for="message">Message :</label>
-								<textarea class="form-control" id="message" name="message" tabindex="4" placeholder="C'est l'histoire d'un aveugle qui rentre dans un bar, puis dans une table, puis dans une chaise, puis dans un mur...""></textarea>
-							</div>
-							<div>
-								<input type="submit" name="envoi" value="Envoyer !" class="btn btn-default submit" aria-hidden="true" />
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
+		</form>
+	</section>
 
-		</section>
-		<footer id="myFooter">
-			<div class="container footer-container">
-				<div class="row">
-					<div class="col-sm-3 col-xs-12">
-						<img src="images/wild_logo3.png" alt="logo wild" class="img_logo">
+	<section id="contact">
+		<div class="section-content">
+			<h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Contactez-nous</span></h1>
+		</div>
+		<div class="contact-section">
+			<div class="container">
+				<form method="post" action="php/traitement_formulaire.php">
+					<div class="col-md-6 col-xs-12 ">
+						<div class="form-group">
+							<label for="exampleInputUsername">Nom</label>
+							<input type="text" id="nom" name="nom" tabindex="1" class="form-control" placeholder="Nom" />
+						</div>
+						<div class="form-group">
+							<label for="exampleInputfirstname">Prenom</label>
+							<input type="text" id="prenom" name="prenom" tabindex="5" class="form-control" placeholder="Prenom" />
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail">Email :</label>
+							<input type="text" class="form-control" id="email" name="email" tabindex="2" placeholder="Email" />
+						</div>
 					</div>
-					<div class="col-sm-3 col-xs-12">
-						<h5>Navigation</h5>
-						<ul>
-							<li><a href="../index.html">Menu</a></li>
-							<li><a href="../page_description/index.html">Description</a></li>
-							<li><a href="../page_gif/index.html">Les joies de la Wild</a></li>
-							<li><a href="../page_form/index.html">Contact</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-3 col-xs-12">
-						<h5>A propos</h5>
-						<ul>
-							<li><a href="#">Laisser un commentaire</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-3 col-xs-12">
-						<div class="social-networks">
-							<a class="hvr-float-shadow" href="https://twitter.com/wildschoollille" class="wild" target="_blank"><img src="images/wild_logo.png" alt="site wild"/></a>
-							<a class="hvr-float-shadow" href="https://fr-fr.facebook.com/wildcodeschool/" class="facebook" target="_blank"><img src="images/facebook.png" alt="facebook wild"/></a>
-							<a class="hvr-float-shadow" href="https://twitter.com/wildschoollille" class="google" target="_blank"><img src="images/twitter.png" alt="twitter wild"/></a>
+					<div class="col-md-6 col-xs-12 deux">
+						<div class="form-group">
+							<label for="exampleInputObjet">Objet :</label>
+							<input type="text" class="form-control" id="objet" name="objet" tabindex="3" placeholder="Objet" />
+						</div>
+						<div class="form-group">
+							<label for="description" for="message">Message :</label>
+							<textarea class="form-control" id="message" name="message" tabindex="4" placeholder="C'est l'histoire d'un aveugle qui rentre dans un bar, puis dans une table, puis dans une chaise, puis dans un mur..."></textarea>
 						</div>
 						<div>
-							<a class= "btn btn-default btn-lg" type="button" onclick="window.location.href='../page_form/index.html#contact'">Contactez-nous</a>
+							<input type="submit" name="envoi" value="Envoyer !" class="btn" aria-hidden="true" />
 						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</section>
+	<footer id="myFooter">
+		<div class="container footer-container">
+			<div class="row">
+				<div class="col-sm-3 col-xs-12">
+					<img src="images/wild_logo3.png" alt="logo wild" class="img_logo">
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<h5>Navigation</h5>
+					<ul>
+						<li><a href="../index.html">Menu</a></li>
+						<li><a href="../page_description/index.html">Description</a></li>
+						<li><a href="../page_gif/index.html">Les joies de la Wild</a></li>
+						<li><a href="../page_form/index.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<h5>A propos</h5>
+					<ul>
+						<li><a href="#">Laisser un commentaire</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="social-networks">
+						<a class="hvr-float-shadow" href="https://twitter.com/wildschoollille" class="wild" target="_blank"><img src="images/wild_logo.png" alt="site wild"/></a>
+						<a class="hvr-float-shadow" href="https://fr-fr.facebook.com/wildcodeschool/" class="facebook" target="_blank"><img src="images/facebook.png" alt="facebook wild"/></a>
+						<a class="hvr-float-shadow" href="https://twitter.com/wildschoollille" class="google" target="_blank"><img src="images/twitter.png" alt="twitter wild"/></a>
+					</div>
+					<div>
+						<a class= "btn btn-default btn-lg" type="button" onclick="window.location.href='../page_form/index.html#contact'">Contactez-nous</a>
 					</div>
 				</div>
 			</div>
-			<div class="footer-copyright">
-				<p>© 2018 Copyright and Stuff <span><img src="images/like.png" /></span> Made with love by Wild Code School </p>
-			</div>
-		</footer>
+		</div>
+		<div class="footer-copyright">
+			<p>© 2018 Copyright and Stuff <span><img src="images/like.png" /></span> Made with love by Wild Code School </p>
+		</div>
+	</footer>
 
-	</div>
+</div>
 
 </div>
 

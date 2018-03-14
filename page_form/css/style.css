@@ -25,11 +25,7 @@ h2 {
 
 /*FORMULAIRE DE CONTACT*/
 
-.submit {
-    font-size: 1.1em;
-    float: center;
-    width: 200px;
-}
+
 
 @font-face {
   font-family: 'Teko';
@@ -86,20 +82,14 @@ textarea.form-control {
     height: 135px;
    /* margin-top: px;*/
 }
+.btn{
+  color: black;
+}
 
 /* .thumbnail {
   height: 100%;
 }
 */
-
-
-.submit{
-  font-size: 1.1em;
-  float: right;
-  width: 150px;
-  background-color: transparent;
-  color: #fff;
-}
 .deux{
 	padding-bottom: 5vw;
 }
@@ -118,7 +108,7 @@ textarea.form-control {
 	padding: 20px;
 	margin: 50px;
 	border: 2px black solid	;
-	box-shadow: 2px 2px 10px;
+	box-shadow: 4px 4px 60px 4px;
   background-color:  #ff9999;
 }
 .textarea_lor{

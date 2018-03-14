@@ -15,7 +15,7 @@ $message_envoye = "Votre message nous est bien parvenu !";
 $message_non_envoye = "L'envoi du mail a échoué, veuillez réessayer SVP.";
 
 // Messages d'erreur du formulaire
-$message_erreur_formulaire = "Vous devez d'abord <a href=\"page4.php\">envoyer le formulaire</a>.";
+$message_erreur_formulaire = "Vous devez d'abord <a href=\"index.php\">envoyer le formulaire</a>.";
 $message_formulaire_invalide = "Vérifiez que tous les champs soient bien remplis et que l'email soit sans erreur.";
 
 /*
@@ -123,7 +123,7 @@ else
 	else
 	{
 		// une des 3 variables (ou plus) est vide ...
-		echo '<p>'.$message_formulaire_invalide.' <a href="page4.php">Retour au formulaire</a></p>'."\n";
+		echo '<p>'.$message_formulaire_invalide.' <a href="../index.php">Retour au formulaire</a></p>'."\n";
 	};
 };
 // fin du if (!isset($_POST['envoi']))

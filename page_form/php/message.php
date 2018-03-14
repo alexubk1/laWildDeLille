@@ -21,7 +21,7 @@ if(isset($_POST['submitButton'])){
         // On vérifie que le login ou le message ne sont pas vide
         elseif (trim($message)=="" || trim($pseudo)=="")
         {
-                echo "Vous devez remplir tous les champs ! <a href='page4.php'>Retour sur le livre d'or</a>";
+                echo "Vous devez remplir tous les champs ! <a href='../index.php'>Retour sur le livre d'or</a>";
                 
                 // On sort du script !
                 exit;
