@@ -41,7 +41,6 @@ h2 {
 }
 
 
-
 /* NAVBAR */
 
 .navbar-nav{
@@ -103,6 +102,7 @@ h2 {
 
 #fullpage {
   height: 100vh;
+
 }
 
 #fullpage .section {
