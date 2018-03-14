@@ -1,11 +1,10 @@
 /*NAVBAR*/
 
 .navbar-nav{
-  font-family: Beauty;
-  font-weight: bold;
+  font-family: Prototype;
   color: black;
   font-size: 1.8vw;
-  margin-right: 4vw;
+  margin-right: 5vw;
 }
 
 .navbar {
@@ -25,6 +24,15 @@
 .navbar-brand img {
   position: relative;;
   height: 100%;
+}
+
+
+.navbar-item {
+  color: black;
+}
+
+.navbar {
+  opacity: 0.8;
 }
 
 .menus{

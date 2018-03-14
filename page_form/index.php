@@ -54,8 +54,8 @@ include 'php/message.php'
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class="hvr-buzz"><a href="../index.html">Menu</a></li>
-					<li class="hvr-buzz"><a href="index.html">Description</a></li>
-					<li class="hvr-buzz"><a href="../page_gif/index.html">Les joies</a></li>
+					<li class="hvr-buzz"><a href="index.html">Inside the Wild</a></li>
+					<li class="hvr-buzz"><a href="../page_gif/index.html">Les joies de la Wild</a></li>
 					<li class="hvr-buzz"><a href="../page_form/index.html">Contact</a></li>
 				</ul>
 			</div>

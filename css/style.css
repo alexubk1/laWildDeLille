@@ -17,13 +17,9 @@ body {
     src: url("../fonts/Beauty.ttf");
 }
 
-/* NAVBAR */
-.navbar-nav{
-  font-family: Beauty;
-  font-weight: bold;
-  color: black;
-  font-size: 1.8vw;
-  margin-right: 4vw;
+@font-face {
+    font-family: Prototype;
+    src: url("../fonts/Prototype.ttf");
 }
 
 
