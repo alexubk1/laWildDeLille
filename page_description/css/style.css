@@ -12,6 +12,11 @@ body {
     src: url("../fonts/Beauty.ttf");
 }
 
+@font-face{
+  font-family: Cantarell-Oblique;
+  src: url("../fonts/Cantarell-Oblique.ttf");
+}
+
 /* #fullpage .section {
   height: 100vh;
   padding: 0;
@@ -94,6 +99,14 @@ h2 {
   border-bottom: solid 5px yellow;
   border-radius: 10px;
 
+}
+
+.materialdescription {
+  position: relative;
+  z-index: 4;
+  color: black;
+  font-size: 1.4vw;
+  font-family: Cantarell-Oblique;
 }
 
 
@@ -380,13 +393,4 @@ footer {
 
 #last_section {
   background: linear-gradient(darkred,black);
-}
-
-.materialdescription {
-  position: relative;
-  z-index: 4;
-  color: black;
-  font-family: cursive;
-  font-weight: bold;
-  font-size: 2vw;
 }
