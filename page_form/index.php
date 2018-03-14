@@ -96,7 +96,7 @@ include 'php/message.php'
 		</form>
 	</section>
 
-	<section id="contact">
+  <section id="contact">
 		<div class="section-content">
 			<h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Contactez-nous</span></h1>
 		</div>
@@ -116,25 +116,23 @@ include 'php/message.php'
 							<label for="exampleInputEmail">Email :</label>
 							<input type="text" class="form-control" id="email" name="email" tabindex="2" placeholder="Email@email.com" />
 						</div>
-					</div>
-					<div class="col-md-6 col-xs-12 deux">
-						<div class="form-group">
-							<label for="exampleInputObjet">Objet :</label>
-							<input type="text" class="form-control" id="objet" name="objet" tabindex="3" placeholder="Objet" />
+						<div class="col-md-6 col-xs-12 deux">
+							<div class="form-group">
+								<label for="exampleInputObjet">Objet :</label>
+								<input type="text" class="form-control" id="objet" name="objet" tabindex="3" placeholder="Objet" />
+							</div>
+							<div class="form-group">
+								<label for="description" for="message">Message :</label>
+								<textarea class="form-control" id="message" name="message" tabindex="4" placeholder="C'est l'histoire d'un aveugle qui rentre dans un bar, puis dans une table, puis dans une chaise, puis dans un mur..."></textarea>
+							</div>
+							<div>
+								<input type="submit" name="envoi" value="Envoyer !" class="btn btn-default submit" aria-hidden="true" />
+							</div>
 						</div>
-						<div class="form-group">
-							<label for="description" for="message">Message :</label>
-							<textarea class="form-control" id="message" name="message" tabindex="4" placeholder="C'est l'histoire d'un aveugle qui rentre dans un bar, puis dans une table, puis dans une chaise, puis dans un mur..."></textarea>
-						</div>
-						<div>
-							<input type="submit" name="envoi" value="Envoyer !" class="btn" aria-hidden="true" />
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-
-	</section>
+					</form>
+				</div>
+      </div>
+   </section>
 	<footer id="myFooter">
 		<div class="container footer-container">
 			<div class="row">
