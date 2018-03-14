@@ -69,16 +69,20 @@ h2 {
 /* -------------------------------------------- */
 /* Money Section */
 .win{
-  width: 100%;
   background-color: #e6e6e6;
   height: 100%;
   /* position:relative; */
 }
 
-.win-image img {
+.argent img {
+  border-radius: 20px;
   position: relative;
-  height: 100%;
+  width: 100%;
   vertical-align: middle;
+}
+
+.text-argent {
+  background-color: yellow;
 }
 
 
