@@ -44,16 +44,9 @@ h2 {
   vertical-align: middle;
 }
 
-.descriptionstaff {
-  font-family: cursive;
-  font-size: 1vw;
-}
 
-.imagesstaff {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
+
+
 
 
 
@@ -325,3 +318,115 @@ h2 {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 } */
+
+
+
+/***** MEDIA OBJECT: TEMOIGNAGE CSS ******/
+@media only screen and (max-width: 600px) {
+  .media {
+    font-size: 10px;
+  }
+}
+
+.media {
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 7px;
+  padding-left: 7px;
+
+}
+
+.temoignage-container {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 100%;
+}
+
+.media-object img {
+  padding: 0;
+  display: block;
+
+}
+
+.media-left {
+  position: relative;
+  background-color: yellow;
+  border: solid orange 2px;
+  border-radius: 70px;
+  padding-right: 0;
+}
+
+.media-right {
+  position: relative;
+  background-color: yellow;
+  border: solid orange 2px;
+  border-radius: 60px;
+  padding-left: 0;
+}
+
+
+.media-left img {
+  border-radius: 60px;
+  height: 160px;
+  width:160px;
+  object-fit: cover;
+  padding: 3vh 2vw 3vh 2vh;
+
+}
+.media-right img {
+  border-radius: 60px;
+  height: 160px;\
+  width: 160px;
+  object-fit: cover;
+  padding: 3vh 2vw 3vh 2vh;
+}
+
+.row {
+  width: 100%;
+}
+
+.media-body {
+  position: relative;
+  font-family: cursive;
+  object-fit: cover;
+  border-bottom: 3px solid yellow;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.media-body h4 {
+  font-weight: bold;
+}
+
+.center-text {
+  padding: 3vw;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ h1 {
+   position: relative;
+  text-align: center;
+  font-family: cursive;
+  padding: 20px;
+}
+
+.big-quote {
+  font-size: ;
+  color: Yellow;
+  letter-spacing: 5px;
+  font-family: fantasy;
+}
+
+.lighter-text {
+  font-weight: lighter;
+  font-style: italic;
+  color: grey;
+}
+
+.center-text p::first-letter {
+  font-size: 200%;
+}
+/*********END TEMOIGNAGE ************/
