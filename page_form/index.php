@@ -130,7 +130,7 @@ include 'php/message.php'
 							</div>
 							<div class="form-group">
 								<label for="description" for="message">Message :</label>
-								<textarea class="form-control" id="message" name="message" tabindex="4" placeholder="C'est l'histoire d'un aveugle qui rentre dans un bar, puis dans une table, puis dans une chaise, puis dans un mur...""></textarea>
+								<textarea class="form-control" id="message" name="message" tabindex="4" placeholder="C'est l'histoire d'un aveugle qui rentre dans un bar, puis dans une table, puis dans une chaise, puis dans un mur..."></textarea>
 							</div>
 							<div>
 								<input type="submit" name="envoi" value="Envoyer !" class="btn btn-default submit" aria-hidden="true" />
@@ -151,7 +151,7 @@ include 'php/message.php'
 						<h5>Navigation</h5>
 						<ul>
 							<li><a href="../index.html">Menu</a></li>
-							<li><a href="../page_description/index.html">Description</a></li>
+							<li><a href="../page_description/index.html">Inside the Wild</a></li>
 							<li><a href="../page_gif/index.html">Les joies de la Wild</a></li>
 							<li><a href="../page_form/index.html">Contact</a></li>
 						</ul>
@@ -159,7 +159,7 @@ include 'php/message.php'
 					<div class="col-sm-3 col-xs-12">
 						<h5>A propos</h5>
 						<ul>
-							<li><a href="#">Laisser un commentaire</a></li>
+							<li><a href="../page_form/index.html#comment">Laisser un commentaire</a></li>
 						</ul>
 					</div>
 					<div class="col-sm-3 col-xs-12">
