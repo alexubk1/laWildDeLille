@@ -105,7 +105,6 @@ include 'php/message.php'
 		<section id="contact">
 			<div class="section-content">
 				<h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Contactez-nous</span></h1>
-				<h3 class="subtext">C'est l'histoire d'un aveugle qui rentre dans un bar, puis dans une table, puis dans une chaise, puis dans un mur...</h3>
 			</div>
 			<div class="contact-section">
 				<div class="container">
@@ -131,7 +130,7 @@ include 'php/message.php'
 							</div>
 							<div class="form-group">
 								<label for="description" for="message">Message :</label>
-								<textarea class="form-control" id="message" name="message" tabindex="4" placeholder="Messsage"></textarea>
+								<textarea class="form-control" id="message" name="message" tabindex="4" placeholder="C'est l'histoire d'un aveugle qui rentre dans un bar, puis dans une table, puis dans une chaise, puis dans un mur...""></textarea>
 							</div>
 							<div>
 								<input type="submit" name="envoi" value="Envoyer !" class="btn btn-default submit" aria-hidden="true" />
