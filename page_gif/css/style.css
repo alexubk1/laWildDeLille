@@ -12,6 +12,11 @@ body{
     src: url("../fonts/Beauty.ttf");
 }
 
+@font-face {
+    font-family: Prototype;
+    src: url("../fonts/Prototype.ttf");
+}
+
 h1{
   position: relative;
   text-align: center;
@@ -20,7 +25,6 @@ h1{
   font-size: 8vw;
   color: yellow;
 }
-
 
 /* DEFINITION DES DIMENSIONS DES ROWS ET DE L'ESPACEMENT AVANT/APRES */
 .row{

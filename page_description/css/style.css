@@ -1,7 +1,5 @@
 /* Style Page Description */
 
-
-
 /* GENERAL */
 
 body {
@@ -11,6 +9,11 @@ body {
 @font-face {
     font-family: Beauty;
     src: url("../fonts/Beauty.ttf");
+}
+
+@font-face {
+    font-family: Prototype;
+    src: url("../fonts/Prototype.ttf");
 }
 
 .content-info {
@@ -41,23 +44,7 @@ h2 {
 }
 
 
-/* NAVBAR */
 
-.navbar-nav{
-  font-family: Beauty;
-  font-weight: bold;
-  color: black;
-  font-size: 1.8vw;
-  margin-right: 4vw;
-}
-
-.navbar-item {
-  color: black;
-}
-
-.navbar {
-  opacity: 0.8;
-}
 
 
 
