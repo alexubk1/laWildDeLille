@@ -81,16 +81,16 @@ include 'php/message.php'
 			<div>
 				<fieldset>
 					<legend>Votre Nom</legend>
-					<input type="text" name="pseudo">
+					<input type="text" name="pseudo" required>
 				</fieldset>
 				<fieldset>
 					<legend>Postez un message pour le livre d'or</legend>
-					<textarea cols="60" rows="6" name="message"></textarea>
+					<textarea cols="60" rows="6" name="message" required></textarea>
 				</fieldset>
 				<input type="submit" value="Envoyer" class="btn" name="submitButton">
 
 				<!-- On va créer un lien vers une autre page pour ceux qui veulent consulter le livre d'or sans poster dedans -->
-				<p>Pour consulter simplement le livre d'or, <a href="php/consultezlo.php" target="_bank">cliquez ici</a>
+				<p class="legend">Pour consulter simplement le livre d'or, <a href="php/consultezlo.php" target="_bank">cliquez ici</a>
 				</p>
 			</div>
 		</form>
@@ -114,7 +114,7 @@ include 'php/message.php'
 						</div>
 						<div class="form-group">
 							<label for="exampleInputEmail">Email :</label>
-							<input type="text" class="form-control" id="email" name="email" tabindex="2" placeholder="Email" />
+							<input type="text" class="form-control" id="email" name="email" tabindex="2" placeholder="Email@email.com" />
 						</div>
 					</div>
 					<div class="col-md-6 col-xs-12 deux">
