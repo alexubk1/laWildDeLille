@@ -15,13 +15,16 @@
 h5 {
 	font-size: 30px !important;
 }
+h2 {
+  font-size: 80px !important;
+}
 .btn {
 	font-size: 30px !important;
 	margin-left: auto;
 	margin-right: auto;
 }
 .menus {
-	font-size: 15px;
+	font-size: 20px;
 }
 
 }

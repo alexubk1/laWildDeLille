@@ -25,6 +25,7 @@ h2 {
   color: Yellow;
   vertical-align: middle;
   font-family: Beauty;
+  text-shadow:0px 0px 0.25em black;
 }
 
 .materialdescription {
