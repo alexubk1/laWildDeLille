@@ -44,9 +44,16 @@ h2 {
   vertical-align: middle;
 }
 
+.descriptionstaff {
+  font-family: cursive;
+  font-size: 1vw;
+}
 
-
-
+.imagesstaff {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 
