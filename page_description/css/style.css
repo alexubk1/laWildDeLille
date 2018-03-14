@@ -29,6 +29,14 @@ body {
   opacity: 0.8;
 }
 
+.navbar-brand {
+  padding: 5px;
+}
+
+.navbar-brand img {
+  position: relative;;
+  height: 100%;
+}
 /* NAVBAR */
 .navbar-nav{
   font-family: Beauty;
@@ -101,6 +109,21 @@ h2 {
 
 /* -------------------------------------------- */
 /* END Hardware THUMBNAIL1 CSS */
+
+/* CSS FOR SLIPPERS */
+.slipper {
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 5vw;
+}
+
+.row .slipper {
+  vertical-align: middle;
+}
+
+
+/* END CSS SLIPPERS */
 
 
 /* BEGINING FOOTER CSS */
