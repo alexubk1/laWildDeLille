@@ -3,6 +3,12 @@ body {
   overflow: hidden;
 }
 
+.beta {
+  background-color: yellow;
+  /* border-radius: 5px;
+  border: black solid 2px; */
+}
+
 #fullpage {
   height: 100vh;
 }

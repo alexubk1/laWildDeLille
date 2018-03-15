@@ -7,6 +7,12 @@ body{
   /* background-image: url("../images/black_background.jpg"); */
 }
 
+.beta {
+  background-color: yellow;
+  /* border-radius: 5px;
+  border: black solid 2px; */
+}
+
 @font-face {
     font-family: Beauty;
     src: url("../fonts/Beauty.ttf");

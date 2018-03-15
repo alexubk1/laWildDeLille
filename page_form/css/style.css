@@ -1,5 +1,11 @@
 /*GENERAL*/
 
+.beta {
+  background-color: yellow;
+  /* border-radius: 5px;
+  border: black solid 2px; */
+}
+
 @font-face {
     font-family: Beauty;
     src: url("../fonts/Beauty.ttf");
