@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Alexandre Aurélien Maxence Nezzar" />
-    <meta name="description" content="La Wild de LIlle - Accueil" />
+    <meta name="description" content="La Wild de Lille - Accueil" />
     <meta name="copyright" content="© WildCodeSchool" />
 
     <title>La wild de Lille - Home</title>
@@ -29,11 +29,11 @@
   </head>
 
   <body>
+
     <!-- navbar -->
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
-  	  <div class="container-fluid">
-  	    <!-- Brand and toggle get grouped for better mobile display -->
+  	  <div class="container-fluid"><!-- START of the container-fluid -->
   	    <div class="navbar-header">
   	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
   	        <span class="sr-only">Toggle navigation</span>
@@ -42,10 +42,9 @@
   	        <span class="icon-bar"></span>
   	      </button>
   	      <a class="navbar-brand" href="index.html">
-  					<img src="images/wild_logo3.png" alt="logo de la Wild">
+  					<img src="images/wild_logo3.png" alt="Wild logo">
   				</a>
   	    </div>
-
   	    <!-- Collect the nav links, forms, and other content for toggling -->
   	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   	      <ul class="nav navbar-nav">
@@ -57,43 +56,54 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="beta"><a href="#">BETA</a></li>
           </ul>
-  	    </div><!-- /.navbar-collapse -->
-  	  </div><!-- /.container-fluid -->
+  	    </div>
+  	  </div><!--END of the container-fluid -->
   	</nav>
   </header>
+  <!-- END of the navbar -->
 
-    <!-- fullpage setup  -->
-    <div id="fullpage">
-      <div class="section section-0-img" >
-        <img src="images/welcome.gif" alt="" data-focus-left="0.34" data-focus-top="0.15" data-focus-right="0.87" data-focus-bottom="0.79"/>
-        <div class="text-div" id="section0">
-          <h2 class="child-2 noir crossed-over">Bienvenue</h2>
-        </div>
-      </div>
-      <div class="section section-1-img" >
-        <img src="images/bg7.jpg" alt="" data-focus-left="0.23" data-focus-top="0.23" data-focus-right="0.72" data-focus-bottom="0.78"/>
-        <div class="text-div" id="section1">
-          <h2 class="child-2 "><a class="hvr-wobble-horizontal" href="page_description/index.html">Inside the Wild</a> </br></br></br> <span>Sur cette page, vous découvrirez les extraordinaires compétences des membres du staff </br>ainsi que le matériel luxueux mis à votre disposition</span></h2>
-        </div>
-      </div>
-      <div class="section section-2-img" >
-        <img src="images/bg8.jpg" alt="" data-focus-left="0.37" data-focus-top="0.18" data-focus-right="0.85" data-focus-bottom="0.79"/>
-        <div class="text-div" id="section2">
-          <h2 class="child-2"><a class="hvr-wobble-horizontal" href="page_gif/index.html">Les joies de la Wild</a></br></br></br> <span>Une page humoristique basée sur le concept des 'Joies du Code' </br>et adaptée à la vie quotidienne de notre école de Lille</span></h2>
-        </div>
-      </div>
-      <div class="section" id="normalScroll">
-        <div class="section-3-img">
-          <img src="images/bg6.jpg" alt="" data-focus-left="0.40" data-focus-top="0.10" data-focus-right="0.82" data-focus-bottom="0.80"/>
-          <div class="text-div" id="section3">
-            <h2 class="child-2"><a class="hvr-wobble-horizontal" href="page_form/index.html">Contactez-nous!</a></br></br></br> <span>Des témoignages 100% vérifiés d'anciens membres et notre formulaire de contact</h2>
+  <!-- START of the fullpage sections -->
+    <div id="fullpage"><!-- Main section for the fullpage setup -->
+      <section><!-- Welcome section -->
+        <div class="section section-0-img" id="welcome_section">
+          <img src="images/welcome.gif" alt="Welcome image" data-focus-left="0.34" data-focus-top="0.15" data-focus-right="0.87" data-focus-bottom="0.79"/>
+          <div class="text-div" id="section0">
+            <h2 class="child-2 noir crossed-over">Bienvenue</h2>
           </div>
         </div>
+      </section>
+      <section><!-- Inside the Wild section -->
+        <div class="section section-1-img" id="inside_section">
+          <img src="images/bg7.jpg" alt="Inside the Wild image" data-focus-left="0.23" data-focus-top="0.23" data-focus-right="0.72" data-focus-bottom="0.78"/>
+          <div class="text-div" id="section1">
+            <h2 class="child-2 "><a class="hvr-wobble-horizontal" href="page_description/index.html">Inside the Wild</a> </br></br></br> <span>Sur cette page, vous découvrirez les extraordinaires compétences des membres du staff </br>ainsi que le matériel luxueux mis à votre disposition</span></h2>
+          </div>
+        </div>
+      </section>
+      <section><!-- Joies de la Wild section -->
+        <div class="section section-2-img" id="joy_section">
+          <img src="images/bg8.jpg" alt="Joies de la Wild image" data-focus-left="0.37" data-focus-top="0.18" data-focus-right="0.85" data-focus-bottom="0.79"/>
+          <div class="text-div" id="section2">
+            <h2 class="child-2"><a class="hvr-wobble-horizontal" href="page_gif/index.html">Les joies de la Wild</a></br></br></br> <span>Une page humoristique basée sur le concept des 'Joies du Code' </br>et adaptée à la vie quotidienne de notre école de Lille</span></h2>
+          </div>
+        </div>
+      </section>
+      <section><!-- Contact section -->
+        <div class="section" id="contact_section">
+          <div class="section-3-img">
+            <img src="images/bg6.jpg" alt="Contact image" data-focus-left="0.40" data-focus-top="0.10" data-focus-right="0.82" data-focus-bottom="0.80"/>
+            <div class="text-div" id="section3">
+              <h2 class="child-2"><a class="hvr-wobble-horizontal" href="page_form/index.html">Contactez-nous!</a></br></br></br> <span>Des témoignages 100% vérifiés d'anciens membres et notre formulaire de contact</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- START of footer -->
       <footer id="myFooter">
         <div class="container footer-container">
           <div>
             <div class="col-sm-3 col-xs-12">
-              <img src="images/wild_logo3.png" alt="logo wild" class="img_logo">
+              <img src="images/wild_logo3.png" alt="Wild logo" class="img_logo">
             </div>
             <div class="col-sm-3 col-xs-12">
               <h5>Navigation</h5>
@@ -112,8 +122,8 @@
             </div>
             <div class="col-sm-3 col-xs-12">
               <div class="social-networks">
-                <a class="hvr-float-shadow" href="https://twitter.com/wildschoollille" class="wild" target="_blank"><img src="images/wild_logo.png" alt="site wild"/></a>
-                <a class="hvr-float-shadow" href="https://fr-fr.facebook.com/wildcodeschool/" class="facebook" target="_blank"><img src="images/facebook.png" alt="facebook wild"/></a>
+                <a class="hvr-float-shadow" href="https://wildcodeschool.fr/" class="wild" target="_blank"><img src="images/wild_logo.png" alt="WildCodeSchool website"/></a>
+                <a class="hvr-float-shadow" href="https://fr-fr.facebook.com/wildcodeschool/" class="facebook" target="_blank"><img src="images/facebook.png" alt="WildCodeSchool facebook"/></a>
                 <a class="hvr-float-shadow" href="https://twitter.com/wildschoollille" class="google" target="_blank"><img src="images/twitter.png" alt="twitter wild"/></a>
               </div>
               <div>
@@ -123,14 +133,13 @@
           </div>
         </div>
         <div class="footer-copyright">
-          <p>© 2018 Copyright and Stuff <span><img src="images/like.png" /></span> Made with love by Wild Code School </p>
+          <p>© 2018 Copyright and Stuff <span><img src="images/like.png" alt="like"/></span> Made with love by Wild Code School </p>
         </div>
       </footer>
-      </div>
+      <!-- END of footer -->
     </div>
-    <!-- footer -->
 
-    <!-- Script JS -->
+    <!-- START of Script JS -->
     <!-- jQuery script -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap script -->
@@ -140,11 +149,11 @@
     <!-- Fullpage script -->
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <!-- Elevator script -->
-    <script type="text/javascript" src='js/elevator.js'></script>
+    <!-- <script type="text/javascript" src='js/elevator.js'></script> -->
     <!-- Elevator custom script -->
-    <script type="text/javascript" src="js/elevator_custom.js"></script>
+    <!-- <script type="text/javascript" src="js/elevator_custom.js"></script> -->
     <!-- Responsify custom script -->
-    <script type="text/javascript" src="js/responsify_custom.js"></script>
+    <!-- <script type="text/javascript" src="js/responsify_custom.js"></script> -->
     <!-- Fullpage custom script -->
     <script type="text/javascript" src="js/fullpage_custom.js"></script>
     <!-- END of Script JS -->
