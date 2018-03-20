@@ -11,22 +11,19 @@
 
     <title>La wild de Lille - Home</title>
 
-    <!-- fullPage CSS -->
+    <!-- Latest compiled fullPage CSS files-->
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <!-- Font-Awesome CSS -->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <!-- Latest compiled and minified AOS CSS files -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
-    <!-- Latest compiled and minified Bootstrap CSS files -->
+    <!-- Latest compiled AOS CSS files -->
+    <link rel="stylesheet" href="css/aos.css" />
+    <!-- Latest compiled Bootstrap CSS files -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <!-- fullPage + Navbar CSS -->
+    <!-- Style fullPage + Navbar -->
     <link rel="stylesheet" type="text/css" href="css/navbar_and_full.css">
-    <!-- Personal CSS -->
+    <!-- General Style -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- Footer CSS -->
+    <!-- Footer Style -->
     <link rel="stylesheet" href="css/Footer-with-button-logo.css">
-
-    <!-- CSS for media queries (low resolution) -->
+    <!-- Media Queries (Resolution <960px) -->
     <link rel="stylesheet" media="(max-width: 960px)" href="css/petite_resolution.css" />
 
   </head>
@@ -132,113 +129,25 @@
       </div>
     </div>
     <!-- footer -->
-    <!-- Srcipt JS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/responsify.js"></script>
+
+    <!-- Script JS -->
+    <!-- jQuery script -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap script -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Responsify script -->
     <script type="text/javascript" src="js/responsify.min.js"></script>
+    <!-- Fullpage script -->
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src='js/elevator.js'></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <!-- Elevator script -->
-    <script>
-      window.onload = function() {
-        var elevator = new Elevator({
-          element: document.querySelector('.elevator-button'),
-          mainAudio: 'audio/Elevator-music.mp3',
-          endAudio: 'audio/Elevator-bell.mp3'
-        });
-      }
-      elevator.elevate();
-    </script>
-    <!-- responsify script, enhances image responsivity -->
-    <script type="text/javascript">
-      $(window).load(function(){
-        $('img').responsify({});
-      });
-      $(window).resize(function(){
-        $('img').responsify({});
-      });
-    </script>
-    <!-- Script fullpage.js -->
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('#fullpage').fullpage({
-          //Navigation
-          // menu: '#menu',
-          // lockAnchors: false,
-          // anchors:['firstPage', 'secondPage'],
-          // navigation: true,
-          // navigationPosition: 'right',
-          // navigationTooltips: ['firstSlide', 'secondSlide'],
-          // showActiveTooltip: false,
-          // slidesNavigation: false,
-          // slidesNavPosition: 'bottom',
-
-          // //Scrolling
-          // css3: true,
-          // scrollingSpeed: 700,
-          // autoScrolling: false,
-          fitToSection: false,
-          // fitToSectionDelay: 1000,
-          scrollBar: true,
-          // easing: 'easeInOutCubic',
-          // easingcss3: 'ease',
-          // loopBottom: false,
-          // loopTop: false,
-          // loopHorizontal: true,
-          // continuousVertical: false,
-          // continuousHorizontal: false,
-          // scrollHorizontally: false,
-          // interlockedSlides: false,
-          // dragAndMove: false,
-          // offsetSections: false,
-          // resetSliders: false,
-          // fadingEffect: false,
-          normalScrollElements: '#normalScroll',
-          // scrollOverflow: false,
-          // scrollOverflowReset: false,
-          // scrollOverflowOptions: null,
-          // touchSensitivity: 15,
-          // normalScrollElementTouchThreshold: 5,
-          // bigSectionsDestination: null,
-
-          // //Accessibility
-          // keyboardScrolling: true,
-          // animateAnchor: true,
-          // recordHistory: true,
-
-          // //Design
-          // controlArrows: true,
-          // verticalCentered: true,
-          // sectionsColor : ['#ccc', '#fff'],
-          // paddingTop: '3em',
-          // paddingBottom: '10px',
-          fixedElements: '#myFooter',
-          // responsiveWidth: 0,
-          // responsiveHeight: 0,
-          // responsiveSlides: false,
-          // parallax: false,
-          // parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-
-          // //Custom selectors
-          // sectionSelector: '.section',
-          // slideSelector: '.slide',
-
-          // lazyLoading: true,
-
-          // //events
-          // onLeave: function(index, nextIndex, direction){},
-          // afterLoad: function(anchorLink, index){},
-          // afterRender: function(){},
-          // afterResize: function(){},
-          // afterResponsive: function(isResponsive){},
-          // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-          // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-        });
-      });
-    </script>
+    <script type="text/javascript" src='js/elevator.js'></script>
+    <!-- Elevator custom script -->
+    <script type="text/javascript" src="js/elevator_custom.js"></script>
+    <!-- Responsify custom script -->
+    <script type="text/javascript" src="js/responsify_custom.js"></script>
+    <!-- Fullpage custom script -->
+    <script type="text/javascript" src="js/fullpage_custom.js"></script>
+    <!-- END of Script JS -->
 
   </body>
 </html>
