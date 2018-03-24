@@ -30,7 +30,7 @@
 
   <body>
 
-<!-- navbar -->
+<!-- START of the navbar -->
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
   	  <div class="container-fluid"><!-- START of the container-fluid -->
@@ -62,30 +62,30 @@
   </header>
 <!-- END of the navbar -->
 
-  <!-- START of the fullpage section -->
+<!-- START of the fullpage section -->
   <section>
     <div id="fullpage"><!-- Start of the main section for the fullpage setup -->
       <div class="section section-0-img"><!-- START of Welcome fullpage -->
-        <img src="images/welcome.gif" alt="" data-focus-left="0.34" data-focus-top="0.15" data-focus-right="0.87" data-focus-bottom="0.79"/>
+        <img src="images/welcome.gif" alt="Welcome gif" data-focus-left="0.34" data-focus-top="0.15" data-focus-right="0.87" data-focus-bottom="0.79"/>
         <div class="text-div" id="section0">
           <h2 class="child-2 noir crossed-over">Bienvenue</h2>
         </div>
       </div><!-- END of Welcome fullpage -->
       <div class="section section-1-img" ><!-- START of Inside the Wild fullpage -->
-        <img src="images/bg7.jpg" alt="Welcome image" data-focus-left="0.23" data-focus-top="0.23" data-focus-right="0.72" data-focus-bottom="0.78"/>
+        <img src="images/bg7.jpg" alt="Inside the Wild image" data-focus-left="0.23" data-focus-top="0.23" data-focus-right="0.72" data-focus-bottom="0.78"/>
         <div class="text-div" id="section1">
           <h2 class="child-2 "><a class="hvr-wobble-horizontal" href="page_description/index.html">Inside the Wild</a> </br></br></br> <span>Sur cette page, vous découvrirez les extraordinaires compétences des membres du staff </br>ainsi que le matériel luxueux mis à votre disposition</span></h2>
         </div>
       </div><!-- END of Inside the Wild fullpage -->
       <div class="section section-2-img" ><!-- START of Joies de la Wild fullpage -->
-        <img src="images/bg8.jpg" alt="" data-focus-left="0.37" data-focus-top="0.18" data-focus-right="0.85" data-focus-bottom="0.79"/>
+        <img src="images/bg8.jpg" alt="Joies de la Wild image" data-focus-left="0.37" data-focus-top="0.18" data-focus-right="0.85" data-focus-bottom="0.79"/>
         <div class="text-div" id="section2">
           <h2 class="child-2"><a class="hvr-wobble-horizontal" href="page_gif/index.html">Les joies de la Wild</a></br></br></br> <span>Une page humoristique basée sur le concept des 'Joies du Code' </br>et adaptée à la vie quotidienne de notre école de Lille</span></h2>
         </div>
       </div><!-- END of Joies de la Wild fullpage -->
       <div class="section" id="normalScroll"><!-- START of Contact fullpage -->
         <div class="section-3-img">
-          <img src="images/bg6.jpg" alt="" data-focus-left="0.40" data-focus-top="0.10" data-focus-right="0.82" data-focus-bottom="0.80"/>
+          <img src="images/bg6.jpg" alt="Contact image" data-focus-left="0.40" data-focus-top="0.10" data-focus-right="0.82" data-focus-bottom="0.80"/>
           <div class="text-div" id="section3">
             <h2 class="child-2"><a class="hvr-wobble-horizontal" href="page_form/index.html">Contactez-nous!</a></br></br></br> <span>Des témoignages 100% vérifiés d'anciens membres et notre formulaire de contact</h2>
           </div>
@@ -94,7 +94,7 @@
           <div class="container footer-container"><!-- START of the footer container -->
             <div class="row"><!-- START of the first footer block -->
               <div class="row col-sm-3 col-xs-12"><!-- 1/4: Logo of the WCS -->
-                <img src="images/wild_logo3.png" alt="logo wild" class="img_logo">
+                <img src="images/wild_logo3.png" alt="WCS logo" class="img_logo">
               </div>
               <div class="col-sm-3 col-xs-12"><!-- 2/4: Navigation links -->
                 <h5>Navigation</h5>
@@ -124,121 +124,31 @@
             </div><!-- END of the first footer block -->
           </div><!-- END of the footer container -->
           <div class="footer-copyright"><!-- START of the second footer block -->
-            <p>© 2018 Copyright and Stuff <span><img src="images/like.png" /></span> Made with love by Wild Code School </p>
+            <p>© 2018 Copyright and Stuff <span><img src="images/like.png" alt="heart image"/></span> Made with love by Wild Code School </p>
           </div><!-- END of the second footer block -->
         </footer><!-- END of the footer -->
       </div><!-- END of the Contact fullpage (containing footer) -->
     </div><!-- End of the main section for the fullpage setup -->
   </section>
-  <!-- END of the fullpage section -->
+<!-- END of the fullpage section -->
 
-    <!-- Scripts JS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/responsify.js"></script>
-    <script type="text/javascript" src="js/responsify.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src='js/elevator.js'></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <!-- Elevator script -->
-    <script>
-      window.onload = function() {
-        var elevator = new Elevator({
-          element: document.querySelector('.elevator-button'),
-          mainAudio: 'audio/Elevator-music.mp3',
-          endAudio: 'audio/Elevator-bell.mp3'
-        });
-      }
-      elevator.elevate();
-    </script>
-    <!-- responsify script, enhances image responsivity -->
-    <script type="text/javascript">
-      $(window).load(function(){
-        $('img').responsify({});
-      });
-      $(window).resize(function(){
-        $('img').responsify({});
-      });
-    </script>
-    <!-- Script fullpage.js -->
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('#fullpage').fullpage({
-          //Navigation
-          // menu: '#menu',
-          // lockAnchors: false,
-          // anchors:['firstPage', 'secondPage'],
-          // navigation: true,
-          // navigationPosition: 'right',
-          // navigationTooltips: ['firstSlide', 'secondSlide'],
-          // showActiveTooltip: false,
-          // slidesNavigation: false,
-          // slidesNavPosition: 'bottom',
-
-          // //Scrolling
-          // css3: true,
-          // scrollingSpeed: 700,
-          // autoScrolling: false,
-          fitToSection: false,
-          // fitToSectionDelay: 1000,
-          scrollBar: true,
-          // easing: 'easeInOutCubic',
-          // easingcss3: 'ease',
-          // loopBottom: false,
-          // loopTop: false,
-          // loopHorizontal: true,
-          // continuousVertical: false,
-          // continuousHorizontal: false,
-          // scrollHorizontally: false,
-          // interlockedSlides: false,
-          // dragAndMove: false,
-          // offsetSections: false,
-          // resetSliders: false,
-          // fadingEffect: false,
-          normalScrollElements: '#normalScroll',
-          // scrollOverflow: false,
-          // scrollOverflowReset: false,
-          // scrollOverflowOptions: null,
-          // touchSensitivity: 15,
-          // normalScrollElementTouchThreshold: 5,
-          // bigSectionsDestination: null,
-
-          // //Accessibility
-          // keyboardScrolling: true,
-          // animateAnchor: true,
-          // recordHistory: true,
-
-          // //Design
-          // controlArrows: true,
-          // verticalCentered: true,
-          // sectionsColor : ['#ccc', '#fff'],
-          // paddingTop: '3em',
-          // paddingBottom: '10px',
-          fixedElements: '#myFooter',
-          // responsiveWidth: 0,
-          // responsiveHeight: 0,
-          // responsiveSlides: false,
-          // parallax: false,
-          // parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-
-          // //Custom selectors
-          // sectionSelector: '.section',
-          // slideSelector: '.slide',
-
-          // lazyLoading: true,
-
-          // //events
-          // onLeave: function(index, nextIndex, direction){},
-          // afterLoad: function(anchorLink, index){},
-          // afterRender: function(){},
-          // afterResize: function(){},
-          // afterResponsive: function(isResponsive){},
-          // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-          // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-        });
-      });
-    </script>
+<!-- Scripts JS -->
+  <!-- Script of jQuery 3.3.1 -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Script of Bootstrap 3.3.7 -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- Script of fullPageJS -->
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <!-- Custom script for fullPageJS -->
+    <script type="text/javascript" src="js/fullpage_custom.js"></script>
+  <!-- Script of ResponsifyJS -->
+  <script type="text/javascript" src="js/responsify.min.js"></script>
+    <!-- Custom script for responsifyJS -->
+    <script type="text/javascript" src="js/responsify_custom.js"></script>
+  <!-- Script of elevatorJS -->
+  <!-- <script type="text/javascript" src='js/elevator.js'></script> -->
+    <!-- Custom script for elevatorJS -->
+    <!-- <script type="text/javascript" src='js/elevator_custom.js'></script> -->
 
   </body>
 </html>
