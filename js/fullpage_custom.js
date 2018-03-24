@@ -1,21 +1,21 @@
-$(document).ready(function() {
+$(document).ready(function(){
   $('#fullpage').fullpage({
     //Navigation
     // menu: '#menu',
-    lockAnchors: false,
-    // anchors:['.section'],
+    // lockAnchors: false,
+    // anchors:['firstPage', 'secondPage'],
     // navigation: true,
     // navigationPosition: 'right',
     // navigationTooltips: ['firstSlide', 'secondSlide'],
     // showActiveTooltip: false,
-    slidesNavigation: true,
-    slidesNavPosition: 'bottom',
+    // slidesNavigation: false,
+    // slidesNavPosition: 'bottom',
 
     // //Scrolling
     // css3: true,
     // scrollingSpeed: 700,
-    // autoScrolling: true,
-    fitToSection: true,
+    // autoScrolling: false,
+    fitToSection: false,
     // fitToSectionDelay: 1000,
     scrollBar: true,
     // easing: 'easeInOutCubic',
@@ -31,7 +31,7 @@ $(document).ready(function() {
     // offsetSections: false,
     // resetSliders: false,
     // fadingEffect: false,
-    normalScrollElements: '#fullpa'
+    normalScrollElements: '#normalScroll',
     // scrollOverflow: false,
     // scrollOverflowReset: false,
     // scrollOverflowOptions: null,
@@ -50,7 +50,7 @@ $(document).ready(function() {
     // sectionsColor : ['#ccc', '#fff'],
     // paddingTop: '3em',
     // paddingBottom: '10px',
-    // fixedElements: '#header, .footer',
+    fixedElements: '#myFooter',
     // responsiveWidth: 0,
     // responsiveHeight: 0,
     // responsiveSlides: false,
